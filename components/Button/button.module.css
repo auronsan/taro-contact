@@ -1,0 +1,57 @@
+.root {
+  --button-height-sm: rem(40px);
+  --button-height: var(--button-height-sm);
+  --button-padding-x: var(--spacing-xs);
+  --button-fz: var(--font-size-sm);
+  --button-radius: var(--radius-sm);
+
+  --button-bd: rem(1px) solid transparent;
+
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+
+  border-radius: var(--button-radius, var(--radius-default));
+  font-size: var(--button-fz, var(--font-size-sm));
+  background: var(--button-bg, var(--primary-color));
+  border: var(--button-bd, rem(1px) solid transparent);
+  color: var(--button-color, var(--color-white));
+  height: var(--button-height, var(--button-height-sm));
+  padding-inline: var(--button-padding-x, var(--button-padding-x-sm));
+  vertical-align: middle;
+
+  &:hover {
+    background-color: var(--button-hover);
+    color: var(--button-hover-color, var(--button-color));
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.button-primary {
+  --button-bg: var(--primary-color);
+  --button-color: var(--color-white);
+  --button-hover: var(--primary-color-hover);
+  --button-hover-color: var(--color-white);
+}
+
+.button-red {
+  --button-bg: var(--color-red);
+  --button-color: var(--color-white);
+  --button-hover: var(--color-red-hover);
+  --button-hover-color: var(--color-white);
+}
+
+.button-yellow {
+  --button-bg: var(--color-yellow);
+  --button-color: var(--color-white);
+  --button-hover: var(--color-yellow-hover);
+  --button-hover-color: var(--color-white);
+}

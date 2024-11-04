@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  --color-black: black;
+  --color-white: #f4f4f4;
+  --color-light: #efedea;
+  --color-dark: #223a2c;
+
+  --color-red: #f44336;
+  --color-red-hover: #d32f2f;
+
+  --color-yellow: #f1c40f;
+  --color-yellow-hover: #fbc02d;
+
+  --color-green: #93c04b;
+  --color-green-hover: #7cb342;
+
+  --primary-color: var(--color-green);
+  --primary-color-hover: var(--color-green-hover);
+
+  --mantine-scale: 1;
+  --radius-default: 10px;
+
+  --breakpoint-xs: 36em;
+  --breakpoint-sm: 48em;
+  --breakpoint-md: 62em;
+  --breakpoint-lg: 75em;
+  --breakpoint-xl: 88em;
+
+  --spacing-xs: rem(10px);
+  --spacing-sm: rem(12px);
+  --spacing-md: rem(16px);
+  --spacing-lg: rem(20px);
+  --spacing-xl: rem(32px);
+  --lo-z-index: 200;
+
+  --container-size-xs: rem(540px);
+  --container-size-sm: rem(720px);
+  --container-size-md: rem(960px);
+  --container-size-lg: rem(1140px);
+  --container-size-xl: rem(1320px);
+  --container-size: var(--container-size-md);
+}
+
+body {
+  color: light-dark(var(--color-black), var(--color-white));
+  background-color: light-dark(var(--color-light), var(--color-dark));
+  margin: 0;
+  --input-bd: var(--color-black);
+  --input-bg: var(--color-white);
+  --input-bd-focus: var(--color-dark);
+}

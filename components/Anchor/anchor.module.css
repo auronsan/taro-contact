@@ -1,0 +1,29 @@
+.root {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: var(--font-size);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.fs-inherit {
+  --font-size: inherit;
+}
+
+.fs-xs {
+  --font-size: rem(10px);
+}
+
+.fs-sm {
+  --font-size: rem(14px);
+}
+
+.fs-md {
+  --font-size: rem(16px);
+}
+
+.fs-lg {
+  --font-size: rem(24px);
+}

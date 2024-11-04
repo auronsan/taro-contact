@@ -1,0 +1,9 @@
+.root {
+  max-width: var(--container-size);
+  padding-inline: var(--spacing-md);
+  margin-inline: auto;
+}
+
+.fluid {
+  max-width: 100%;
+}

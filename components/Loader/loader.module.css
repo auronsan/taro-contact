@@ -1,0 +1,49 @@
+.root {
+  --loader-size-xs: 18px;
+  --loader-size-sm: 22px;
+  --loader-size-md: 36px;
+  --loader-size-lg: 44px;
+  --loader-size-xl: 58px;
+  --loader-size: var(--loader-size-md);
+  --loader-color: var(--primary-color);
+}
+
+/* ----- Bars loader ----- */
+@keyframes bars-loader-animation {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+.barsLoader {
+  position: relative;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  display: flex;
+  gap: calc(var(--loader-size) / 5);
+}
+
+.bar {
+  flex: 1;
+  background: var(--loader-color);
+  animation: bars-loader-animation 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  border-radius: 2px;
+
+  &:nth-of-type(1) {
+    animation-delay: -240ms;
+  }
+
+  &:nth-of-type(2) {
+    animation-delay: -120ms;
+  }
+
+  &:nth-of-type(3) {
+    animation-delay: 0;
+  }
+}

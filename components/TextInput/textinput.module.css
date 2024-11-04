@@ -1,0 +1,45 @@
+.root {
+  --input-height-xs: 30px;
+  --input-height-sm: 36px;
+  --input-height-md: 42px;
+  --input-height-lg: 50px;
+  --input-height-xl: 60px;
+
+  --input-height: var(--input-height-sm);
+  --input-radius: var(--radius-default);
+  --input-size: var(--input-height);
+  --input-padding-x: rem(10px);
+
+  --input-cursor: text;
+  --input-text-align: left;
+  --input-bg: var(--color-white);
+}
+
+.input {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  outline: none;
+  box-sizing: border-box;
+  resize: var(--input-resize, none);
+  display: block;
+  width: 100%;
+  transition: border-color 0.1s ease;
+  text-align: var(--input-text-align);
+  color: var(--input-color);
+  border: rem(1px) solid var(--input-bd);
+  background-color: var(--input-bg);
+  height: var(--input-size);
+  min-height: var(--input-height);
+  line-height: var(--input-line-height);
+  font-size: var(--input-fz);
+  border-radius: var(--input-radius);
+  padding-inline: var(--input-padding-x, 0);
+  padding-bottom: var(--input-padding-y, 0);
+  cursor: var(--input-cursor);
+  overflow: var(--input-overflow);
+
+  &:focus {
+    outline: none;
+    border-color: var(--input-bd-focus);
+  }
+}
