@@ -1,33 +1,73 @@
-import { IconStar } from '@tabler/icons-react';
+import Image from 'next/image';
+import {
+  IconBriefcase,
+  IconEdit,
+  IconSpeakerphone,
+  IconStar,
+  IconTrash,
+} from '@tabler/icons-react';
+import { ActionIcon } from '@/components/ActionIcon';
 import { Box } from '@/components/Box';
-import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
+import { Popover } from '@/components/Popover';
 import { Stack } from '@/components/Stack';
 import { Text } from '@/components/Text';
+import { useMutateDeleteContact } from '@/services/contacts';
 import { TContact } from '@/services/contacts/types';
 
 export const ContactItem = (props: { contact: TContact }) => {
   const { contact } = props;
+
+  const deleteContact = useMutateDeleteContact(contact.id);
 
   return (
     <>
       <Group justify="space-between" wrap="nowrap">
         <Box>
           <Group wrap="nowrap">
-            <Box>
-              <IconStar />
-            </Box>
+            <Image
+              alt={`avatar of ${contact.first_name}`}
+              src="/dart.jpeg"
+              width={50}
+              height={50}
+            />
             <Stack gap="xs">
-              <Text>{contact.first_name}</Text>
-              <Text>Job: {contact.job}</Text>
-              <Text>Description: {contact.description}</Text>
+              <Text size="lg" fw="bold">
+                {contact.first_name}
+              </Text>
+              <Group>
+                <IconBriefcase color="skyblue" />
+                <Text>{contact.job}</Text>
+              </Group>
+              <Group>
+                <IconSpeakerphone />
+                <Text>{contact.description}</Text>
+              </Group>
             </Stack>
           </Group>
         </Box>
         <Box>
-          <Stack gap="md">
-            <Button c="yellow">Edit</Button>
-            <Button c="red">Delete</Button>
+          <Stack>
+            <Box>
+              <IconStar />
+            </Box>
+            <Popover>
+              <Stack gap="md">
+                <ActionIcon>
+                  <Group>
+                    <IconEdit />
+                    Edit
+                  </Group>
+                </ActionIcon>
+
+                <ActionIcon onClick={() => deleteContact.mutate()}>
+                  <Group>
+                    <IconTrash color="red" />
+                    <Text c="red">Delete</Text>
+                  </Group>
+                </ActionIcon>
+              </Stack>
+            </Popover>
           </Stack>
         </Box>
       </Group>

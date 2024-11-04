@@ -9,7 +9,7 @@
   --color-red-hover: #d32f2f;
 
   --color-yellow: #f1c40f;
-  --color-yellow-hover: #fbc02d;
+  --color-yellow-hover: #f7b50e;
 
   --color-green: #93c04b;
   --color-green-hover: #7cb342;
@@ -39,6 +39,9 @@
   --container-size-lg: rem(1140px);
   --container-size-xl: rem(1320px);
   --container-size: var(--container-size-md);
+
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+  --overlay-z-index: 200;
 }
 
 body {

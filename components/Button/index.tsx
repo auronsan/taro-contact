@@ -7,15 +7,25 @@ export type ButtonProps = DOMAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   // color
   c?: 'primary' | 'red' | 'yellow';
+
+  // variant
+  v?: 'outline' | 'filled';
 };
 
-export const Button = ({ children, className, c = 'primary', ...rest }: ButtonProps) => (
+export const Button = ({
+  children,
+  className,
+  c = 'primary',
+  v = 'filled',
+  ...rest
+}: ButtonProps) => (
   <button
     type="button"
     className={clsx(
       classes.root,
       {
         [classes[`button-${c}`]]: !!c,
+        [classes[`button-variant-${v}`]]: !!v,
       },
       className
     )}

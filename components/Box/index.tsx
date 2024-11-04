@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { MouseEventHandler } from 'react';
 
 export type BoxProps = {
   /** Class added to the root element, if applicable */
@@ -8,7 +8,16 @@ export type BoxProps = {
   component?: keyof JSX.IntrinsicElements;
   children?: React.ReactNode;
 
+  // flexbox
   flex?: number;
+
+  // margin
+  m?: number;
+  // padding
+  p?: number;
+
+  // onclick
+  onClick?: MouseEventHandler;
 };
 
 export const Box = ({
@@ -17,16 +26,21 @@ export const Box = ({
   component = 'div',
   flex,
   style,
+  m,
+  p,
   ...rest
 }: BoxProps) => {
   const Component = component;
 
   return (
     <Component
-      className={clsx({
-        [className]: !!className,
-      })}
-      style={{ flex, ...style }}
+      {...(className ? { className } : {})}
+      style={{
+        flex,
+        ...(typeof m === 'number' ? { margin: `${m}px` } : {}),
+        ...(typeof p === 'number' ? { padding: `${p}px` } : {}),
+        ...style,
+      }}
       {...rest}
     >
       {children}

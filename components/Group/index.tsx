@@ -9,16 +9,30 @@ type GroupProps = {
   gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   // padding
   p?: number;
+  // margin-bottom
+  mb?: number;
 } & BoxProps;
 
-export const Group = ({ children, justify, wrap, gap = 'sm', p = 0, ...restProps }: GroupProps) => (
+export const Group = ({
+  children,
+  className,
+  justify,
+  wrap,
+  gap = 'sm',
+  p,
+  mb,
+  ...restProps
+}: GroupProps) => (
   <Box
-    className={clsx(classes.root, {
+    className={clsx(className, classes.root, {
       [classes[`justify-${justify}`]]: !!justify,
       [classes[`group-${wrap}`]]: !!wrap,
       [classes[`gap-${gap}`]]: !!gap,
     })}
-    style={{ padding: p }}
+    style={{
+      ...(typeof p === 'number' ? { padding: `${p}px` } : {}),
+      ...(typeof mb === 'number' ? { marginBottom: `${mb}px` } : {}),
+    }}
     {...restProps}
   >
     {children}

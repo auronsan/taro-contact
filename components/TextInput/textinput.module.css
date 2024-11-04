@@ -13,6 +13,9 @@
   --input-cursor: text;
   --input-text-align: left;
   --input-bg: var(--color-white);
+
+  --input-bd: transparent;
+  --input-bd-focus: var(--primary-color);
 }
 
 .input {

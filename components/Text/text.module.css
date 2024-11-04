@@ -10,7 +10,6 @@
   background-clip: text;
 }
 
-
 .ta-center {
   text-align: center;
 }
@@ -41,4 +40,12 @@
 
 .fs-lg {
   font-size: 1.125rem;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-bold {
+  font-weight: bold;
 }

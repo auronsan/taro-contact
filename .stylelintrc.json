@@ -6,6 +6,7 @@
     "scss/no-duplicate-mixins": null,
     "declaration-empty-line-before": null,
     "declaration-block-no-redundant-longhand-properties": null,
+    "shorthand-property-no-redundant-values": null,
     "alpha-value-notation": null,
     "custom-property-empty-line-before": null,
     "property-no-vendor-prefix": null,

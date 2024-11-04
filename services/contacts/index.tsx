@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { axiosClient } from '@/lib/axios';
 import type { TContact, UseGetListContactOptions } from '@/services/contacts/types';
 
@@ -16,3 +16,18 @@ export const useGetListContacts = (options: UseGetListContactOptions = {}) =>
     queryFn: getListContacts,
     ...options,
   });
+
+export const deleteContact = async (id: number) => {
+  const { status } = await axiosClient.delete(`/contacts/${id}`);
+  return status === 200;
+};
+
+export const useMutateDeleteContact = (id: number) => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: () => deleteContact(id),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
+    },
+  });
+};

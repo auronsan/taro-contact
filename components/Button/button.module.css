@@ -55,3 +55,15 @@
   --button-hover: var(--color-yellow-hover);
   --button-hover-color: var(--color-white);
 }
+
+.button-variant-filled {
+  --button-bd: rem(1px) solid transparent;
+}
+
+.button-variant-outline {
+  --button-bd: rem(1px) solid var(---primary-color);
+  --button-bg: var(--color-white);
+  --button-color: var(--primary-color);
+  --button-hover: var(--primary-color);
+  --button-hover-color: var(--color-white);
+}

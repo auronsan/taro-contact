@@ -3,11 +3,6 @@ import type { BoxProps } from '@/components/Box';
 import { Box } from '@/components/Box';
 import classes from './container.module.css';
 
-export type ContainerStylesNames = 'root';
-export type ContainerCssVariables = {
-  root: '--container-size';
-};
-
 export interface ContainerProps extends BoxProps {
   /** Sets `max-width` of the container, value is not responsive – it is the same for all screen sizes. Numbers are converted to rem. Ignored when `fluid` prop is set. `'md'` by default */
   size?: (string & {}) | number;

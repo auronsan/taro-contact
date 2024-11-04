@@ -5,5 +5,5 @@
 }
 
 .fluid {
-  max-width: 100%;
+  --container-size: 100%;
 }

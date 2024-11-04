@@ -1,0 +1,9 @@
+.root {
+  z-index: var(--lo-z-index);
+  inset: 0;
+  position: absolute;
+  background: var(--overlay-bg, rgba(0, 0, 0, 0));
+  backdrop-filter: var(--overlay-filter);
+  -webkit-backdrop-filter: var(--overlay-filter);
+  border-radius: var(--overlay-radius, 0);
+}

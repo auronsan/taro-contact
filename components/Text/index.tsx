@@ -12,6 +12,15 @@ export type TextProps = {
   ta?: 'center' | 'right' | 'left' | 'justify';
   // font-size
   size?: 'inherit' | 'xs' | 'sm' | 'md' | 'lg';
+
+  // onClick
+  onClick?: () => void;
+
+  // color
+  c?: string;
+
+  // font-weight
+  fw?: 'normal' | 'bold';
 };
 
 export const Text = ({
@@ -20,7 +29,9 @@ export const Text = ({
   gradient,
   ta = 'left',
   size = 'md',
+  fw,
   style,
+  c,
   ...rest
 }: TextProps) => {
   const Component = component;
@@ -34,9 +45,11 @@ export const Text = ({
         [classes['text-gradient']]: gradient,
         [classes[`ta-${ta}`]]: ta === 'center',
         [classes[`fs-${size}`]]: !!size,
+        [classes[`fw-${fw}`]]: !!fw,
       })}
       style={{
         ...style,
+        ...(c ? { color: c } : {}),
         ...innerStyle,
       }}
       {...rest}
