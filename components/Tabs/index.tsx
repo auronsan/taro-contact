@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { Suspense, useMemo } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useMediaQuery } from '@mantine/hooks';
 import { Box } from '@/components/Box';
@@ -19,7 +19,7 @@ type TabsProps = {
   rightContent?: React.ReactNode;
 };
 
-export const Tabs = (props: TabsProps): React.ReactElement => {
+const TabsComponent = (props: TabsProps): React.ReactElement => {
   const { children, tabs, tabKey = 'tab', rightContent = <></> } = props;
 
   const searchParams = useSearchParams();
@@ -68,3 +68,9 @@ export const Tabs = (props: TabsProps): React.ReactElement => {
     </>
   );
 };
+
+export const Tabs = (props: TabsProps) => (
+  <Suspense>
+    <TabsComponent {...props} />
+  </Suspense>
+);

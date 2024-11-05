@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+'use client';
+
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { IconSearch, IconX } from '@tabler/icons-react';
 import { ActionIcon } from '@/components/ActionIcon';
@@ -6,7 +8,7 @@ import { Box } from '@/components/Box';
 import { Group } from '@/components/Group';
 import { TextInput } from '@/components/TextInput';
 
-export const SearchBar = (): React.ReactElement => {
+const Search = (): React.ReactElement => {
   const searchParams = useSearchParams();
   const queryParam = searchParams?.get('q');
   const pathName = usePathname();
@@ -67,3 +69,9 @@ export const SearchBar = (): React.ReactElement => {
     </Group>
   );
 };
+
+export const SearchBar = () => (
+  <Suspense>
+    <Search />
+  </Suspense>
+);
