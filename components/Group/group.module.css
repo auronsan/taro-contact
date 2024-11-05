@@ -43,3 +43,7 @@
 .gap-xl {
   gap: var(--spacing-xl);
 }
+
+.fullWidth {
+  width: 100%;
+}

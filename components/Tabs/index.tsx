@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useMediaQuery } from '@mantine/hooks';
 import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
@@ -25,6 +26,8 @@ const Tabs = (props: TabsProps): React.ReactElement => {
   const pathName = usePathname();
   const activeTab = searchParams.get(tabKey);
 
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   const router = useRouter();
 
   const activeTabIndex = useMemo(() => {
@@ -40,21 +43,26 @@ const Tabs = (props: TabsProps): React.ReactElement => {
 
   return (
     <>
-      <Group justify="space-between" mb={10}>
-        <Group gap="sm">
+      <Group justify="space-between" fullWidth>
+        <Group gap="sm" fullWidth>
           {tabs?.map((tab, index) => (
             <Button
               key={tab.key}
               onClick={() => handleTabClick(tab.key)}
               v={index !== activeTabIndex ? 'outline' : 'filled'}
+              flex={isMobile ? 1 : undefined}
             >
               {tab.label}
             </Button>
           ))}
         </Group>
-
-        {rightContent}
+        {!isMobile && <Box>{rightContent}</Box>}
       </Group>
+      {isMobile && (
+        <Box flex={1} py={10}>
+          {rightContent}
+        </Box>
+      )}
 
       <Box>{children[activeTabIndex]}</Box>
     </>

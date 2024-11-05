@@ -26,7 +26,9 @@ export const ContactItem = (props: { contact: TContact }) => {
   const [editModalVisible, setEditModalVisible] = useState(false);
 
   const currentFavorite = useGetFavorite(`${contact.id}`);
-  const toggleFavorite = useMutateToggleFavorite(`${contact.id}`);
+  const toggleFavorite = useMutateToggleFavorite(`${contact.id}`, {
+    isFavorite: currentFavorite,
+  });
   const deleteContact = useMutateDeleteContact(contact.id);
 
   return (

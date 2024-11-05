@@ -1,0 +1,33 @@
+.toast {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 202;
+}
+
+.success {
+  background-color: var(--color-green);
+}
+
+.error {
+  background-color: var(--color-red);
+}

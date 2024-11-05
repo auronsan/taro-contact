@@ -1,9 +1,14 @@
 .root {
   max-width: var(--container-size);
+  overflow: hidden;
   padding-inline: var(--spacing-md);
   margin-inline: auto;
 }
 
 .fluid {
   --container-size: 100%;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-inline: 0px;
+  }
 }

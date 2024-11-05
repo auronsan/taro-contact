@@ -12,15 +12,15 @@ type StackProps = {
 } & BoxProps;
 
 export const Stack = (props: StackProps) => {
-  const { children, justify, wrap, gap = 'sm', p = 0, ...restProps } = props;
+  const { children, justify, className, wrap, gap = 'sm', p = 0, ...restProps } = props;
   return (
     <Box
-      className={clsx(classes.root, {
+      className={clsx(classes.root, className, {
         [classes[`justify-${justify}`]]: !!justify,
         [classes[`stack-${wrap}`]]: !!wrap,
         [classes[`gap-${gap}`]]: !!gap,
       })}
-      style={{ padding: p }}
+      style={{ ...(typeof p === 'number' ? { padding: `${p}px` } : {}) }}
       {...restProps}
     >
       {children}

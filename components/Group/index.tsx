@@ -11,6 +11,9 @@ type GroupProps = {
   p?: number;
   // margin-bottom
   mb?: number;
+
+  // width 100%
+  fullWidth?: boolean;
 } & BoxProps;
 
 export const Group = ({
@@ -21,6 +24,7 @@ export const Group = ({
   gap = 'sm',
   p,
   mb,
+  fullWidth,
   ...restProps
 }: GroupProps) => (
   <Box
@@ -28,6 +32,7 @@ export const Group = ({
       [classes[`justify-${justify}`]]: !!justify,
       [classes[`group-${wrap}`]]: !!wrap,
       [classes[`gap-${gap}`]]: !!gap,
+      [classes.fullWidth]: !!fullWidth,
     })}
     style={{
       ...(typeof p === 'number' ? { padding: `${p}px` } : {}),

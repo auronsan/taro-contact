@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { Box } from '@/components/Box';
 import Grid from '@/components/Grid';
 import { LoadingOverlay } from '@/components/LoadingOverlay';
-import { useGetListContacts } from '@/services/contacts';
+import { useGetListContacts } from '@/services/contacts/get-list';
 import type { TContact } from '@/services/contacts/types';
 import { useGetFavorites } from '@/services/favorites';
 import { ContactItem } from './ContactItem';
@@ -42,7 +42,7 @@ export const ContactList = (props: TContactListProps): React.ReactElement => {
   }, [data, isFavorite, favorites]);
 
   return (
-    <Box>
+    <Box mt={10}>
       <LoadingOverlay visible={isLoading} />
       <Grid>
         {filteredData &&

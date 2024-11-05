@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { useLocalStorage } from '@mantine/hooks';
 import { useMutation } from '@tanstack/react-query';
+import { useToast } from '@/providers/ToastProvider';
+import { FAVORITE_QUERY_KEY } from './constants';
 import type { AddFavoritePayload, TFavorite } from './types';
-
-export const FAVORITE_QUERY_KEY = 'favorites';
 
 const useFavoriteStorage = () =>
   useLocalStorage<TFavorite[]>({
@@ -35,8 +35,12 @@ export const toggleFavorite = async (payload: AddFavoritePayload) => {
   return true;
 };
 
-export const useMutateToggleFavorite = (id: string) => {
+export const useMutateToggleFavorite = (
+  id: string,
+  { isFavorite = false }: { isFavorite?: boolean }
+) => {
   const [currentFavorite, setCurrentFavorite] = useFavoriteStorage();
+  const { showToast, showError } = useToast();
 
   return useMutation({
     mutationFn: () =>
@@ -45,5 +49,13 @@ export const useMutateToggleFavorite = (id: string) => {
         favorite: currentFavorite,
         setFavorite: setCurrentFavorite,
       }),
+    onSuccess: () => {
+      showToast({
+        message: `Successfully ${!isFavorite ? 'unfavorite' : 'favorite'} ${id}`,
+      });
+    },
+    onError: (e) => {
+      showError(e.message);
+    },
   });
 };

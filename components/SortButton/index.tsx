@@ -1,7 +1,7 @@
 'use client';
 
+import { useRef } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { IconSortAZ, IconSortZA } from '@tabler/icons-react';
 import { Box } from '@/components/Box';
 import { Group } from '@/components/Group';
 import classes from './sortButton.module.css';
@@ -17,6 +17,8 @@ export const SortButton = (): React.ReactElement => {
   const sortParams = searchParams.get('sort');
   const orderParams = searchParams.get('order');
 
+  const selectRef = useRef<HTMLSelectElement>();
+
   const handleSort = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newSort = e.target.value;
     const newSortSplit = newSort.split('.');
@@ -30,20 +32,34 @@ export const SortButton = (): React.ReactElement => {
 
   return (
     <>
-      <Box p={5}>
-        <Group wrap="nowrap">
+      <Box>
+        <Group>
           <select
             value={`${sortParams}.${orderParams}`}
             onChange={handleSort}
             className={classes['custom-select']}
+            ref={(r) => {
+              if (r) {
+                selectRef.current = r;
+              }
+            }}
           >
-            <option value="id.asc">ID (asc)</option>
-            <option value="first_name.asc">First Name (asc)</option>
-            <option value="last_name.asc">Last Name (asc)</option>
-            <option value="first_name.desc">First Name (desc)</option>
-            <option value="last_name.desc">Last Name (desc)</option>
+            <option value="id.asc" className={classes['custom-option']}>
+              ID &#x20;&#x2191;
+            </option>
+            <option value="first_name.asc" className={classes['custom-option']}>
+              First Name &#x20;&#x2191;
+            </option>
+            <option value="first_name.desc" className={classes['custom-option']}>
+              First Name &#x20;&#x2193;
+            </option>
+            <option value="last_name.asc" className={classes['custom-option']}>
+              Last Name &#x20;&#x2191;
+            </option>
+            <option value="last_name.desc" className={classes['custom-option']}>
+              Last Name &#x20;&#x2193;
+            </option>
           </select>
-          {orderParams === 'asc' ? <IconSortAZ size={34} /> : <IconSortZA size={34} />}
         </Group>
       </Box>
     </>

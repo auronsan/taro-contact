@@ -13,8 +13,18 @@ export type BoxProps = {
 
   // margin
   m?: number;
+
+  // margin-top
+  mt?: number;
+
   // padding
   p?: number;
+
+  // padding-x
+  px?: number;
+
+  // padding-y
+  py?: number;
 
   // onclick
   onClick?: MouseEventHandler;
@@ -28,6 +38,9 @@ export const Box = ({
   style,
   m,
   p,
+  px,
+  py,
+  mt,
   ...rest
 }: BoxProps) => {
   const Component = component;
@@ -37,9 +50,12 @@ export const Box = ({
       {...(className ? { className } : {})}
       style={{
         flex,
+        ...style,
         ...(typeof m === 'number' ? { margin: `${m}px` } : {}),
         ...(typeof p === 'number' ? { padding: `${p}px` } : {}),
-        ...style,
+        ...(typeof px === 'number' ? { paddingLeft: `${px}px`, paddingRight: `${px}px` } : {}),
+        ...(typeof py === 'number' ? { paddingTop: `${py}px`, paddingBottom: `${py}px` } : {}),
+        ...(typeof mt === 'number' ? { marginTop: `${mt}px` } : {}),
       }}
       {...rest}
     >

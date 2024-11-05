@@ -14,7 +14,7 @@ export default function Layout({
   return (
     <Container fluid>
       <Header />
-      <Box p={30}>
+      <Box px={30} py={10}>
         <Tabs
           tabs={[
             {

@@ -10,6 +10,11 @@ export type ButtonProps = DOMAttributes<HTMLButtonElement> & {
 
   // variant
   v?: 'outline' | 'filled';
+
+  // flex
+  flex?: number;
+
+  style?: React.CSSProperties;
 };
 
 export const Button = ({
@@ -17,6 +22,8 @@ export const Button = ({
   className,
   c = 'primary',
   v = 'filled',
+  flex,
+  style,
   ...rest
 }: ButtonProps) => (
   <button
@@ -29,6 +36,10 @@ export const Button = ({
       },
       className
     )}
+    style={{
+      ...(flex ? { flex } : {}),
+      ...style,
+    }}
     {...rest}
   >
     {children}
