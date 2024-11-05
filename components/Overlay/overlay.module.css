@@ -1,5 +1,5 @@
 .root {
-  z-index: var(--lo-z-index);
+  z-index: var(--overlay-z-index);
   inset: 0;
   position: absolute;
   background: var(--overlay-bg, rgba(0, 0, 0, 0));

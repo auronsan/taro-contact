@@ -15,6 +15,7 @@ import { Text } from '@/components/Text';
 import { useMutateDeleteContact } from '@/services/contacts';
 import { TContact } from '@/services/contacts/types';
 import { useGetFavorite, useMutateToggleFavorite } from '@/services/favorites';
+import classes from './contactItem.module.css';
 
 export const ContactItem = (props: { contact: TContact }) => {
   const { contact } = props;
@@ -33,6 +34,7 @@ export const ContactItem = (props: { contact: TContact }) => {
               src="/dart.jpeg"
               width={50}
               height={50}
+              className={classes.image}
             />
             <Stack gap="xs">
               <Text size="lg" fw="bold">

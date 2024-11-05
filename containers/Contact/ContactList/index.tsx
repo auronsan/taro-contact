@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Box } from '@/components/Box';
 import Grid from '@/components/Grid';
 import { LoadingOverlay } from '@/components/LoadingOverlay';
@@ -15,10 +16,18 @@ type TContactListProps = {
 };
 
 export const ContactList = (props: TContactListProps): React.ReactElement => {
+  const searchParam = useSearchParams();
+  const queryParam = searchParam?.get('q');
   const { contacts: initialData, isFavorite = false } = props;
-  const { data, isLoading } = useGetListContacts({
-    initialData: initialData || [],
-  });
+  const { data, isLoading } = useGetListContacts(
+    {
+      initialData: initialData || [],
+    },
+    {
+      filter: queryParam || '',
+      sort: 'id',
+    }
+  );
   const favorites = useGetFavorites();
 
   const filteredData = useMemo(() => {

@@ -20,18 +20,11 @@
   --mantine-scale: 1;
   --radius-default: 10px;
 
-  --breakpoint-xs: 36em;
-  --breakpoint-sm: 48em;
-  --breakpoint-md: 62em;
-  --breakpoint-lg: 75em;
-  --breakpoint-xl: 88em;
-
   --spacing-xs: rem(10px);
   --spacing-sm: rem(12px);
   --spacing-md: rem(16px);
   --spacing-lg: rem(20px);
   --spacing-xl: rem(32px);
-  --lo-z-index: 200;
 
   --container-size-xs: rem(540px);
   --container-size-sm: rem(720px);
@@ -44,9 +37,17 @@
   --overlay-z-index: 200;
 }
 
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
 body {
-  color: light-dark(var(--color-black), var(--color-white));
-  background-color: light-dark(var(--color-light), var(--color-dark));
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
   margin: 0;
   --input-bd: var(--color-black);
   --input-bg: var(--color-white);

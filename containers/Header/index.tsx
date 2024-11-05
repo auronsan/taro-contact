@@ -6,8 +6,9 @@ import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
 import { Modal } from '@/components/Modal';
+import { SearchBar } from '@/components/SearchBar';
 import { Text } from '@/components/Text';
-import { TextInput } from '@/components/TextInput';
+import { ToggleColorScheme } from '@/components/ToggleColorScheme';
 import { useMutateAddContact } from '@/services/contacts';
 
 export const Header = () => {
@@ -20,9 +21,12 @@ export const Header = () => {
       <Group justify="space-between" p={20}>
         <Anchor href="/">Contact List</Anchor>
         <Box flex={0.8}>
-          <TextInput placeholder="Search" />
+          <SearchBar />
         </Box>
-        <Button onClick={() => setAddModal(true)}>Add</Button>
+        <Group>
+          <ToggleColorScheme />
+          <Button onClick={() => setAddModal(true)}>Add</Button>
+        </Group>
       </Group>
       <Modal visible={addModal} onClose={() => setAddModal(false)}>
         <Text>abc</Text>

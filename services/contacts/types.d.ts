@@ -19,3 +19,9 @@ export type TAddContactPayload = {
 export type UseGetListContactOptions = Partial<
   UseQueryOptions<TContact[], AxiosError, TContact[], string[]>
 >;
+
+export type UseGetListContactPayload = {
+  filter?: string;
+  sort?: keyof TContact | '';
+  order?: 'asc' | 'desc';
+};

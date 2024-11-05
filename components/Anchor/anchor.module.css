@@ -1,6 +1,6 @@
 .root {
   text-decoration: none;
-  color: var(--color-black);
+  color: light-dark(var(--color-black), var(---color-white));
   font-size: var(--font-size);
 
   &:hover {
