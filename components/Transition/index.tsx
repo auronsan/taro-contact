@@ -1,6 +1,6 @@
 import React from 'react';
 import { getTransitionStyles } from './get-transition-styles';
-import { TransitionName } from './types';
+import type { TransitionName } from './transition';
 
 export type TransitionProps = {
   transition: TransitionName;

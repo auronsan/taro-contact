@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
@@ -14,13 +14,15 @@ type Tab = {
 type TabsProps = {
   children: React.ReactNode[];
   tabs: Tab[];
+  tabKey?: string;
 };
 
 const Tabs = (props: TabsProps): React.ReactElement => {
-  const { children, tabs } = props;
+  const { children, tabs, tabKey = 'tab' } = props;
 
   const searchParams = useSearchParams();
-  const activeTab = searchParams.get('tab');
+  const pathName = usePathname();
+  const activeTab = searchParams.get(tabKey);
 
   const router = useRouter();
 
@@ -30,7 +32,9 @@ const Tabs = (props: TabsProps): React.ReactElement => {
   }, [tabs, activeTab]);
 
   const handleTabClick = (key: string) => {
-    router.push(`/contacts/?tab=${key}`);
+    const query = new URLSearchParams(searchParams);
+    query.set(tabKey, key);
+    router.push(`${pathName}?${query.toString()}`);
   };
 
   return (

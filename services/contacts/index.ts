@@ -1,6 +1,11 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { AxiosError } from 'axios';
 import { axiosClient } from '@/lib/axios';
-import type { TContact, UseGetListContactOptions } from '@/services/contacts/types';
+import type {
+  TAddContactPayload,
+  TContact,
+  UseGetListContactOptions,
+} from '@/services/contacts/types';
 
 export const CONTACT_QUERY_KEY = 'contacts';
 
@@ -28,6 +33,36 @@ export const useMutateDeleteContact = (id: number) => {
     mutationFn: () => deleteContact(id),
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
+    },
+  });
+};
+
+export const addContact = async (payload: TAddContactPayload) => {
+  const response = await axiosClient.post('/contacts', {
+    contact: payload,
+  });
+
+  return response.status === 200;
+};
+
+export const useMutateAddContact = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: addContact,
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
+    },
+    onError: (e: AxiosError<string>) => {
+      if (e.response) {
+        const html = e.response.data;
+        if (!html) return;
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const errorElement = doc.querySelector('h1');
+        if (errorElement) {
+          console.log(errorElement.textContent);
+        }
+      }
     },
   });
 };

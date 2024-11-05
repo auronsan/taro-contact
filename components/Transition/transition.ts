@@ -1,4 +1,12 @@
-import { TransitionName, TransitionStyles } from './types';
+export interface TransitionStyles {
+  common?: React.CSSProperties;
+  in: React.CSSProperties;
+  out: React.CSSProperties;
+  transitionProperty: React.CSSProperties['transitionProperty'];
+}
+export type TransitionName = 'fade' | 'fade-down' | 'fade-up';
+
+export type Transition = TransitionName | TransitionStyles;
 
 export const transitions: Record<TransitionName, TransitionStyles> = {
   fade: {

@@ -1,5 +1,5 @@
 import { transitions } from './transition';
-import { Transition } from './types';
+import type { Transition } from './transition';
 
 const transitionStatuses = {
   entering: 'in',

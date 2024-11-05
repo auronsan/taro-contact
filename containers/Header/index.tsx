@@ -8,9 +8,12 @@ import { Group } from '@/components/Group';
 import { Modal } from '@/components/Modal';
 import { Text } from '@/components/Text';
 import { TextInput } from '@/components/TextInput';
+import { useMutateAddContact } from '@/services/contacts';
 
 export const Header = () => {
   const [addModal, setAddModal] = useState(false);
+
+  const addContact = useMutateAddContact();
 
   return (
     <>
@@ -23,6 +26,18 @@ export const Header = () => {
       </Group>
       <Modal visible={addModal} onClose={() => setAddModal(false)}>
         <Text>abc</Text>
+        <Button
+          onClick={() =>
+            addContact.mutate({
+              first_name: 'abc',
+              last_name: 'def',
+              job: 'xyz',
+              description: 'abc',
+            })
+          }
+        >
+          Add
+        </Button>
       </Modal>
     </>
   );

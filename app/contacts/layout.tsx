@@ -25,6 +25,7 @@ export default function Layout({
               key: 'favorite',
             },
           ]}
+          tabKey="tab-contact"
         >
           <>{list}</>
           <>{favorite}</>
