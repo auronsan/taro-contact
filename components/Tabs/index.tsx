@@ -19,7 +19,7 @@ type TabsProps = {
   rightContent?: React.ReactNode;
 };
 
-const Tabs = (props: TabsProps): React.ReactElement => {
+export const Tabs = (props: TabsProps): React.ReactElement => {
   const { children, tabs, tabKey = 'tab', rightContent = <></> } = props;
 
   const searchParams = useSearchParams();
@@ -47,7 +47,7 @@ const Tabs = (props: TabsProps): React.ReactElement => {
         <Group gap="sm" fullWidth>
           {tabs?.map((tab, index) => (
             <Button
-              key={tab.key}
+              key={`tab-${tab.key}`}
               onClick={() => handleTabClick(tab.key)}
               v={index !== activeTabIndex ? 'outline' : 'filled'}
               flex={isMobile ? 1 : undefined}
@@ -68,5 +68,3 @@ const Tabs = (props: TabsProps): React.ReactElement => {
     </>
   );
 };
-
-export default Tabs;

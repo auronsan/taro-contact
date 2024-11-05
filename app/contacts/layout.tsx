@@ -1,7 +1,7 @@
 import { Box } from '@/components/Box';
 import { Container } from '@/components/Container';
 import { SortButton } from '@/components/SortButton';
-import Tabs from '@/components/Tabs';
+import { Tabs } from '@/components/Tabs';
 import { Header } from '@/containers/Header';
 
 export default function Layout({

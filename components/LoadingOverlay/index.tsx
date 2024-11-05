@@ -18,7 +18,7 @@ export const LoadingOverlay = (props: LoadingOverlayProps) => {
     <Transition transition="fade" visible={visible}>
       {(transitionclasses) => (
         <Box style={transitionclasses} className={classes.root}>
-          <Loader className={classes.loader} />
+          <Loader className={classes.loader} data-testid="loading-overlay" />
           <Overlay />
         </Box>
       )}

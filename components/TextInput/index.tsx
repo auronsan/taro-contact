@@ -8,14 +8,20 @@ export type TextInputProps = DetailedHTMLProps<
 > &
   BoxProps & {
     label?: string;
+    id?: string;
+    name?: string;
   };
 export const TextInput = forwardRef((props: TextInputProps, _ref: Ref<HTMLInputElement>) => {
-  const { label, ...rest } = props;
+  const { label, id, name, ...rest } = props;
 
   return (
     <Box className={classes.root}>
-      {label && <label className={classes.label}>{label}</label>}
-      <input className={classes.input} ref={_ref} {...rest} />
+      {label && (
+        <label className={classes.label} htmlFor={id}>
+          {label}
+        </label>
+      )}
+      <input className={classes.input} name={name} ref={_ref} data-testid={id} id={id} {...rest} />
     </Box>
   );
 });

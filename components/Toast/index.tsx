@@ -56,7 +56,7 @@ export const Toast = ({
 };
 
 export const ToastContainer = ({ children }: { children: React.ReactNode }) => (
-  <Stack className={classes['toast-container']} gap="xs">
+  <Stack className={classes['toast-container']} gap="xs" id="toast-container">
     {children}
   </Stack>
 );

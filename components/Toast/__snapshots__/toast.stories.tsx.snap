@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Toast Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+    <div class="toast_toast__tBw0J toast_success__TUm0C">
+      Default Toast
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Toast Error smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+    <div class="toast_toast__tBw0J toast_error__SGlCN">
+      Error Toast
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Toast Success smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+    <div class="toast_toast__tBw0J toast_visible___6NKv toast_success__TUm0C">
+      Success Toast
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Toast WithDuration smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+    <div class="toast_toast__tBw0J toast_success__TUm0C">
+      Toast with Duration
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

@@ -2,7 +2,7 @@ import './global.css';
 
 import React from 'react';
 import { Roboto } from 'next/font/google';
-import { GlobalProvider } from './provider';
+import { GlobalProvider } from '@/providers/GlobalProvider';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],

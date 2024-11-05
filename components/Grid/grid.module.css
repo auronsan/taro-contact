@@ -15,6 +15,18 @@
   }
 }
 
+.grid-container-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  @media (max-width: $breakpoint-md) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+}
+
 .grid-col {
   background-color: light-dark(var(--color-white), var(--color-black));
   padding: rem(10px);

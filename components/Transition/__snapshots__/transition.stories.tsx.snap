@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Transition Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <button type="button"
+          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+  >
+    Toggle Transition
+  </button>
+  <div style="transition-property: opacity; transition-duration: 300ms; transition-timing-function: ease; opacity: 0;">
+    <h1>
+      Transition Component
+    </h1>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

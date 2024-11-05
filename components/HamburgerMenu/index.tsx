@@ -12,7 +12,7 @@ type HamburgerMenuProps = {
   menu: React.ReactNode;
 };
 
-const HamburgerMenu = (props: HamburgerMenuProps): React.ReactElement => {
+export const HamburgerMenu = (props: HamburgerMenuProps): React.ReactElement => {
   const { menu } = props;
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,5 +39,3 @@ const HamburgerMenu = (props: HamburgerMenuProps): React.ReactElement => {
     </Box>
   );
 };
-
-export default HamburgerMenu;

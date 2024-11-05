@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Tabs Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+      >
+        Tab 1
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 2
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 3
+      </button>
+    </div>
+    <div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Content for Tab 1
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Tabs WithActiveTab smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+      >
+        Tab 1
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 2
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 3
+      </button>
+    </div>
+    <div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Content for Tab 1
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Tabs WithRightContent smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+      >
+        Tab 1
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 2
+      </button>
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+      >
+        Tab 3
+      </button>
+    </div>
+    <div>
+      <div>
+        Right Content
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Content for Tab 1
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

@@ -45,7 +45,7 @@ export const ContactItem = (props: { contact: TContact }) => {
             />
             <Stack gap="xs">
               <Text size="lg" fw="bold">
-                {contact.first_name}
+                {contact.first_name} {contact.last_name}
               </Text>
               <Group>
                 <IconBriefcase color="skyblue" />
@@ -65,9 +65,15 @@ export const ContactItem = (props: { contact: TContact }) => {
                 {currentFavorite ? <IconStar color="orange" fill="orange" /> : <IconStar />}
               </ActionIcon>
             </Box>
-            <Popover target={<IconSettings />}>
+            <Popover
+              target={<IconSettings />}
+              targetId={`edit-setting-contact-button-${contact.id}`}
+            >
               <Stack gap="md">
-                <ActionIcon onClick={() => setEditModalVisible(true)}>
+                <ActionIcon
+                  onClick={() => setEditModalVisible(true)}
+                  id={`edit-contact-button-${contact.id}`}
+                >
                   <Group>
                     <IconEdit />
                     Edit

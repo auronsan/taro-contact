@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Box AsADifferentComponent smoke-test 1`] = `
+<main class="roboto-normal">
+  <span id="first-child"
+        data-testid="first-child"
+  >
+    Content
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Box WithChildren smoke-test 1`] = `
+<main class="roboto-normal">
+  <div>
+    Content
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Box WithCustomClassName smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="custom-class"
+       id="first-child"
+       data-testid="first-child"
+  >
+    Content
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Box WithInlineStyles smoke-test 1`] = `
+<main class="roboto-normal">
+  <div id="first-child"
+       data-testid="first-child"
+       style="background-color: red;"
+  >
+    Content
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Box WithMarginAndPadding smoke-test 1`] = `
+<main class="roboto-normal">
+  <div id="first-child"
+       data-testid="first-child"
+       style="margin: 10px; padding: 20px;"
+  >
+    Content
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

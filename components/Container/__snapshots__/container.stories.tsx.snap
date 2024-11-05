@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Container WithContent smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="container_root__6_PcI">
+    Content
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

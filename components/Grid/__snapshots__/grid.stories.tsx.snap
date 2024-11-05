@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Grid Usage smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="grid_grid-container__wRdc4 grid_grid-container-columns-2__oW8KO">
+    <div class="grid_grid-col__PIb_W">
+      Col 1
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 2
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 3
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Grid Usage3Columns smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="grid_grid-container__wRdc4 grid_grid-container-columns-3__w_kra">
+    <div class="grid_grid-col__PIb_W">
+      Col 1
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 2
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 3
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`grid Usage smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="grid_grid-container__wRdc4 grid_grid-container-columns-2__oW8KO">
+    <div class="grid_grid-col__PIb_W">
+      Col 1
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 2
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 3
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`grid Usage3Columns smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="grid_grid-container__wRdc4 grid_grid-container-columns-3__w_kra">
+    <div class="grid_grid-col__PIb_W">
+      Col 1
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 2
+    </div>
+    <div class="grid_grid-col__PIb_W">
+      Col 3
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

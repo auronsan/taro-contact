@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Title Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <h2 class="title_title__RhqmI">
+    Default Title
+  </h2>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`Components/Title WithCustomClassName smoke-test 1`] = `
+<main class="roboto-normal">
+  <h2 class="title_title__RhqmI custom-class">
+    Title with Custom Class Name
+  </h2>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

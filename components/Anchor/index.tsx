@@ -7,10 +7,24 @@ type AnchorProps = {
   children: ReactNode;
   // font-size
   size?: 'inherit' | 'xs' | 'sm' | 'md' | 'lg';
+
+  className?: string;
+  style?: React.CSSProperties;
+
+  id?: string;
 };
 
-export const Anchor: React.FC<AnchorProps> = ({ href, children, size }) => (
-  <a href={href} className={clsx({ [classes.root]: true, [classes[`fs-${size}`]]: !!size })}>
-    {children}
-  </a>
-);
+export const Anchor: React.FC<AnchorProps> = (props: AnchorProps) => {
+  const { href, children, size, className, style, id } = props;
+  return (
+    <a
+      href={href}
+      className={clsx(className, { [classes.root]: true, [classes[`fs-${size}`]]: !!size })}
+      style={style}
+      id={id}
+      data-testid={id}
+    >
+      {children}
+    </a>
+  );
+};

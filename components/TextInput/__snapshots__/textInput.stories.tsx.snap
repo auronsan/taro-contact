@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/TextInput Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="textinput_root__IJOrE">
+    <input class="textinput_input__ICHQz"
+           data-testid="default-text-input"
+           id="default-text-input"
+           placeholder="Default Text Input"
+           name="default"
+    >
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/TextInput WithLabel smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="textinput_root__IJOrE">
+    <label class="textinput_label__Fgwby"
+           for="labeled-text-input"
+    >
+      Labeled Text Input
+    </label>
+    <input class="textinput_input__ICHQz"
+           data-testid="labeled-text-input"
+           id="labeled-text-input"
+           placeholder="Text Input"
+           name="labeled"
+    >
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

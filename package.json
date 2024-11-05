@@ -16,12 +16,15 @@
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "test-storybook": "test-storybook",
+    "test-e2e": "playwright test --ui"
   },
   "dependencies": {
     "@mantine/form": "^7.13.4",
     "@mantine/hooks": "^7.13.4",
     "@next/bundle-analyzer": "^14.2.4",
+    "@storybook/test-runner": "^0.19.1",
     "@tabler/icons-react": "^3.6.0",
     "@tanstack/react-query": "^5.59.19",
     "axios": "^1.7.7",
@@ -35,6 +38,7 @@
     "@babel/core": "^7.24.7",
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@next/eslint-plugin-next": "^14.2.4",
+    "@playwright/test": "^1.48.2",
     "@storybook/nextjs": "^8.1.10",
     "@storybook/react": "^8.1.10",
     "@testing-library/dom": "^10.1.0",

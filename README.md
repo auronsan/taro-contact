@@ -26,6 +26,8 @@ This template comes with the following features:
 - `jest` – runs jest tests
 - `jest:watch` – starts jest watch
 - `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
+- `test-storybook` - runs snapshot test
+- `test-e2e` - runs e2e test with playwright
 
 ### Other scripts
 

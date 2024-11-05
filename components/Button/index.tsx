@@ -15,6 +15,10 @@ export type ButtonProps = DOMAttributes<HTMLButtonElement> & {
   flex?: number;
 
   style?: React.CSSProperties;
+
+  id?: string;
+
+  type?: 'button' | 'submit';
 };
 
 export const Button = ({
@@ -24,10 +28,12 @@ export const Button = ({
   v = 'filled',
   flex,
   style,
+  id,
+  type = 'button',
   ...rest
 }: ButtonProps) => (
   <button
-    type="button"
+    type={type === 'submit' ? 'submit' : 'button'}
     className={clsx(
       classes.root,
       {
@@ -40,6 +46,8 @@ export const Button = ({
       ...(flex ? { flex } : {}),
       ...style,
     }}
+    data-testid={id}
+    id={id}
     {...rest}
   >
     {children}

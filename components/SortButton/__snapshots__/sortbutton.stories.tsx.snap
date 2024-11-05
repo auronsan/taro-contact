@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/SortButton Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="group_root__JMRrN group_justify-center__JoiHJ group_gap-sm__VCWmB">
+    <div>
+      <div class="group_root__JMRrN group_gap-sm__VCWmB">
+        <select class="sortButton_custom-select__AFqG_">
+          <option value="id.asc"
+                  class="sortButton_custom-option__6JTrV"
+          >
+            ID  ↑
+          </option>
+          <option value="first_name.asc"
+                  class="sortButton_custom-option__6JTrV"
+          >
+            First Name  ↑
+          </option>
+          <option value="first_name.desc"
+                  class="sortButton_custom-option__6JTrV"
+          >
+            First Name  ↓
+          </option>
+          <option value="last_name.asc"
+                  class="sortButton_custom-option__6JTrV"
+          >
+            Last Name  ↑
+          </option>
+          <option value="last_name.desc"
+                  class="sortButton_custom-option__6JTrV"
+          >
+            Last Name  ↓
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

@@ -6,10 +6,11 @@ import classes from './popover.module.css';
 type TPopoverProps = {
   children: React.ReactNode;
   target: React.ReactNode;
+  targetId?: string;
 };
 
 export const Popover = (props: TPopoverProps) => {
-  const { children, target = <></> } = props;
+  const { children, target = <></>, targetId } = props;
   const [visible, setVisible] = useState(false);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -31,6 +32,7 @@ export const Popover = (props: TPopoverProps) => {
         onClick={() => {
           setVisible(!visible);
         }}
+        id={targetId}
       >
         {target}
       </ActionIcon>

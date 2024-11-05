@@ -6,16 +6,19 @@ import classes from './grid.module.css';
 export type GridProps = {
   children?: React.ReactNode;
   columns?: number;
+  id?: string;
 };
 
 const Grid = (props: GridProps) => {
-  const { children, columns = 2 } = props;
+  const { children, columns = 2, id } = props;
 
   return (
     <Box
       className={clsx(classes['grid-container'], {
         [classes[`grid-container-columns-${columns}`]]: !!columns,
       })}
+      id={id}
+      data-testid={id}
     >
       {children}
     </Box>
@@ -24,11 +27,16 @@ const Grid = (props: GridProps) => {
 
 export type GridColProps = {
   children?: React.ReactNode;
+  id?: string;
 };
 
 const GridCol = (props: GridColProps) => {
-  const { children } = props;
-  return <Box className={classes['grid-col']}>{children}</Box>;
+  const { children, id } = props;
+  return (
+    <Box className={classes['grid-col']} id={id}>
+      {children}
+    </Box>
+  );
 };
 
 Grid.Col = GridCol;

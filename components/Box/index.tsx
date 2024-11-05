@@ -28,6 +28,11 @@ export type BoxProps = {
 
   // onclick
   onClick?: MouseEventHandler;
+
+  // role
+  role?: string;
+
+  id?: string;
 };
 
 export const Box = ({
@@ -41,6 +46,8 @@ export const Box = ({
   px,
   py,
   mt,
+  role,
+  id,
   ...rest
 }: BoxProps) => {
   const Component = component;
@@ -48,6 +55,9 @@ export const Box = ({
   return (
     <Component
       {...(className ? { className } : {})}
+      role={role}
+      id={id}
+      data-testid={id}
       style={{
         flex,
         ...style,

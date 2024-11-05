@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import clsx from 'clsx';
 import classes from './title.module.css';
 
 export type TitleProps = DetailedHTMLProps<
@@ -9,7 +10,7 @@ export type TitleProps = DetailedHTMLProps<
 };
 
 export const Title = ({ children, className, ...rest }: TitleProps) => (
-  <h2 className={`${classes.title} ${className || ''}`} {...rest}>
+  <h2 className={clsx(classes.title, className)} {...rest}>
     {children}
   </h2>
 );

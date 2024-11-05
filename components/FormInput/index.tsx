@@ -20,6 +20,7 @@ export const FormInput = ({
   <Field form={form} fieldName={fieldName} prefix={prefix}>
     {({ value, onChange: onChangeLocal }) => (
       <TextInput
+        name={fieldName}
         value={`${value || ''}`}
         onChange={(e) => {
           const val = e.target.value;

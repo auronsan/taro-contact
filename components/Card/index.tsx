@@ -6,10 +6,8 @@ type TCardProps = {
   children: React.ReactNode;
 };
 
-const Card = ({ children }: TCardProps): React.ReactElement => (
+export const Card = ({ children }: TCardProps): React.ReactElement => (
   <Box className={classes.card}>
     <Box>{children}</Box>
   </Box>
 );
-
-export default Card;

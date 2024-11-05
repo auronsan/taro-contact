@@ -48,6 +48,10 @@ export const ToastProvider = ({
       errorNotificationMessage = caughtError;
     }
 
+    if (typeof caughtError === 'object') {
+      errorNotificationMessage = caughtError[Object.keys(caughtError)[0]];
+    }
+
     const id = randomId();
 
     const notification: ToastProps = {
@@ -97,7 +101,7 @@ export const ToastProvider = ({
   const clean = () => update(() => []);
 
   const items = state.map((notification) => (
-    <Toast key={notification.id} {...notification} onDismiss={hideToast} />
+    <Toast {...notification} key={`toast-${notification.id}`} onDismiss={hideToast} />
   ));
 
   const memoValue = useMemo(

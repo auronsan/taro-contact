@@ -12,7 +12,7 @@
 
   --input-cursor: text;
   --input-text-align: left;
-  --input-bg: var(--color-white);
+  --input-bg: light-dark(var(--color-white), var(--color-black));
 
   --input-bd: transparent;
   --input-bd-focus: var(--primary-color);

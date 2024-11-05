@@ -14,6 +14,6 @@ export const Field = ({
   children,
 }: FormInputProps): React.ReactElement => {
   const prefixFieldName = prefix ? `${prefix}.${fieldName}` : `${fieldName}`;
-  const { value = '', onChange } = form.getInputProps(prefixFieldName);
-  return children({ value, onChange });
+  const { value = '', onChange, ...rest } = form.getInputProps(prefixFieldName);
+  return children({ value, onChange, ...rest });
 };

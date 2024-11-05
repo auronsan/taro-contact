@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Popover Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="group_root__JMRrN group_justify-center__JoiHJ group_gap-sm__VCWmB">
+    <div class="popover_wrapper__jeMey">
+      <div class="actionIcon_root__jjWKK"
+           role="button"
+           id="popover-target"
+           data-testid="popover-target"
+      >
+        Target
+      </div>
+      <div class="popover_content__Av33o">
+        <p>
+          Popover content goes here
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

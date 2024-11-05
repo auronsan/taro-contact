@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/LoadingOverlay Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="loadingoverlay_root__Dpy3f"
+       style="transition-property: opacity; transition-duration: 300ms; transition-timing-function: ease; opacity: 1;"
+  >
+    <span class="loader_root__PzLDe loader_barsLoader__m37dO loadingoverlay_loader__VXqH2"
+          data-testid="loading-overlay"
+    >
+      <span class="loader_bar__7sZw3">
+      </span>
+      <span class="loader_bar__7sZw3">
+      </span>
+      <span class="loader_bar__7sZw3">
+      </span>
+    </span>
+    <div class="overlay_root__me_uh">
+    </div>
+  </div>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/LoadingOverlay Hidden smoke-test 1`] = `
+<main class="roboto-normal">
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

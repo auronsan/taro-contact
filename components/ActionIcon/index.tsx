@@ -4,9 +4,10 @@ import classes from './actionIcon.module.css';
 type TActionIconProps = {
   onClick?: () => void;
   children?: React.ReactNode;
+  id?: string;
 };
 export const ActionIcon = (props: TActionIconProps): React.ReactElement => {
-  const { onClick, children } = props;
+  const { onClick, children, id } = props;
 
   return (
     <Box
@@ -18,6 +19,8 @@ export const ActionIcon = (props: TActionIconProps): React.ReactElement => {
           onClick();
         }
       }}
+      id={id}
+      role="button"
     >
       {children}
     </Box>

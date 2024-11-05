@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Text Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_fs-md__gO30j">
+    Default Text
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Text WithColor smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_fs-md__gO30j"
+        style="color: rgb(255, 0, 0);"
+  >
+    Red Color Text
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Text WithFontSize smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_fs-lg__IAQ1L">
+    Large Font Size Text
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Text WithFontWeight smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_fs-md__gO30j text_fw-bold__DfOLl">
+    Bold Font Weight Text
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Text WithGradient smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_text-gradient__MXfWo text_fs-md__gO30j"
+        style="background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);"
+  >
+    Text with Gradient
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Text WithTextAlign smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="text_text__ynNTn text_ta-center__Rbgq3 text_fs-md__gO30j">
+    Center Aligned Text
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

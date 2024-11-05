@@ -6,11 +6,11 @@ import { Anchor } from '@/components/Anchor';
 import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
-import HamburgerMenu from '@/components/HamburgerMenu';
+import { HamburgerMenu } from '@/components/HamburgerMenu';
 import { SearchBar } from '@/components/SearchBar';
 import { Stack } from '@/components/Stack';
 import { ToggleColorScheme } from '@/components/ToggleColorScheme';
-import { AddContactModal } from './AddContactModal';
+import { AddContactModal } from '@/containers/Contact/AddContactModal';
 
 export const Header = () => {
   const [addModal, setAddModal] = useState(false);
@@ -25,7 +25,9 @@ export const Header = () => {
               menu={
                 <Stack px={20} gap="lg" mt={10}>
                   <ToggleColorScheme />
-                  <Button onClick={() => setAddModal(true)}>Add</Button>
+                  <Button onClick={() => setAddModal(true)} id="add-contact-button">
+                    Add
+                  </Button>
                 </Stack>
               }
             />
@@ -41,7 +43,9 @@ export const Header = () => {
             {!isMobile && (
               <Group>
                 <ToggleColorScheme />
-                <Button onClick={() => setAddModal(true)}>Add</Button>
+                <Button onClick={() => setAddModal(true)} id="add-contact-button">
+                  Add
+                </Button>
               </Group>
             )}
           </Box>

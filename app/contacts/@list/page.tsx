@@ -1,7 +1,5 @@
 import { ContactList } from '@/containers/Contact/ContactList';
-import { getListContacts } from '@/services/contacts/get-list';
 
 export default async function ContactPage() {
-  const contacts = await getListContacts();
-  return <ContactList contacts={contacts} />;
+  return <ContactList contacts={[]} />;
 }

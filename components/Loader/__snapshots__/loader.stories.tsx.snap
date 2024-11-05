@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Loader Default smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="loader_root__PzLDe loader_barsLoader__m37dO">
+    <span class="loader_bar__7sZw3">
+    </span>
+    <span class="loader_bar__7sZw3">
+    </span>
+    <span class="loader_bar__7sZw3">
+    </span>
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Loader WithProps smoke-test 1`] = `
+<main class="roboto-normal">
+  <span class="loader_root__PzLDe loader_barsLoader__m37dO custom-class">
+    <span class="loader_bar__7sZw3">
+    </span>
+    <span class="loader_bar__7sZw3">
+    </span>
+    <span class="loader_bar__7sZw3">
+    </span>
+  </span>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

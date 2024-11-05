@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Anchor WithCustomClassName smoke-test 1`] = `
+<main class="roboto-normal">
+  <a href="https://example.com"
+     class="custom-class anchor_root__e1GyS"
+     id="first-child"
+     data-testid="first-child"
+  >
+    Click Here
+  </a>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Anchor WithHref smoke-test 1`] = `
+<main class="roboto-normal">
+  <a href="https://example.com"
+     class="anchor_root__e1GyS"
+  >
+    Click Here
+  </a>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;
+
+exports[`components/Anchor WithInlineStyles smoke-test 1`] = `
+<main class="roboto-normal">
+  <a href="https://example.com"
+     class="anchor_root__e1GyS"
+     id="first-child"
+     data-testid="first-child"
+     style="background-color: red;"
+  >
+    Click Here
+  </a>
+  <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
+       id="toast-container"
+       data-testid="toast-container"
+       style="padding: 0px;"
+  >
+  </div>
+</main>
+`;

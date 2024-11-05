@@ -1,5 +1,14 @@
 import React, { useEffect } from 'react';
+import { Roboto } from 'next/font/google';
 import { addons } from '@storybook/preview-api';
+import { GlobalProvider } from '@/providers/GlobalProvider';
+
+import '@/app/global.css';
+
+const roboto = Roboto({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+});
 
 export const parameters = {
   layout: 'fullscreen',
@@ -10,4 +19,10 @@ export const parameters = {
 
 const channel = addons.getChannel();
 
-export const decorators = [(renderStory: any) => <>{renderStory()}</>];
+export const decorators = [
+  (renderStory: any) => (
+    <main className={roboto.className}>
+      <GlobalProvider>{renderStory()}</GlobalProvider>
+    </main>
+  ),
+];
