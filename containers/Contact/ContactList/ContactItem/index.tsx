@@ -14,12 +14,12 @@ import { Stack } from '@/components/Stack';
 import { Text } from '@/components/Text';
 import { useMutateDeleteContact } from '@/services/contacts';
 import { TContact } from '@/services/contacts/types';
-import { useGetFavorites, useMutateToggleFavorite } from '@/services/favorites';
+import { useGetFavorite, useMutateToggleFavorite } from '@/services/favorites';
 
 export const ContactItem = (props: { contact: TContact }) => {
   const { contact } = props;
 
-  const { data: currentFavorite } = useGetFavorites(`${contact.id}`);
+  const currentFavorite = useGetFavorite(`${contact.id}`);
   const toggleFavorite = useMutateToggleFavorite(`${contact.id}`);
   const deleteContact = useMutateDeleteContact(contact.id);
 

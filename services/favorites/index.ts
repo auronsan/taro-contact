@@ -1,6 +1,7 @@
+import { useMemo } from 'react';
 import { useLocalStorage } from '@mantine/hooks';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import type { AddFavoritePayload, GetFavoritePayload, TFavorite } from './types';
+import { useMutation } from '@tanstack/react-query';
+import type { AddFavoritePayload, TFavorite } from './types';
 
 export const FAVORITE_QUERY_KEY = 'favorites';
 
@@ -8,27 +9,18 @@ const useFavoriteStorage = () =>
   useLocalStorage<TFavorite[]>({
     key: FAVORITE_QUERY_KEY,
     defaultValue: [],
+    getInitialValueInEffect: true,
   });
 
-const getFavorites = async (payload: GetFavoritePayload): Promise<boolean> => {
-  const { data, favorite } = payload;
-  if (favorite.includes(data)) {
-    return true;
-  }
-  return false;
+export const useGetFavorite = (id: string) => {
+  const [currentFavorite] = useFavoriteStorage();
+  const favorite = useMemo(() => currentFavorite?.includes(id), [currentFavorite, id]);
+  return favorite;
 };
 
-export const useGetFavorites = (id: string) => {
+export const useGetFavorites = () => {
   const [currentFavorite] = useFavoriteStorage();
-
-  return useQuery({
-    queryKey: [FAVORITE_QUERY_KEY, id],
-    queryFn: () =>
-      getFavorites({
-        data: id,
-        favorite: currentFavorite,
-      }),
-  });
+  return currentFavorite;
 };
 
 export const toggleFavorite = async (payload: AddFavoritePayload) => {
@@ -44,7 +36,6 @@ export const toggleFavorite = async (payload: AddFavoritePayload) => {
 };
 
 export const useMutateToggleFavorite = (id: string) => {
-  const queryClient = useQueryClient();
   const [currentFavorite, setCurrentFavorite] = useFavoriteStorage();
 
   return useMutation({
@@ -54,8 +45,5 @@ export const useMutateToggleFavorite = (id: string) => {
         favorite: currentFavorite,
         setFavorite: setCurrentFavorite,
       }),
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: [FAVORITE_QUERY_KEY, id] });
-    },
   });
 };

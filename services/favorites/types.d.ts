@@ -5,8 +5,3 @@ export type AddFavoritePayload = {
   favorite: TFavorite[];
   setFavorite: (favorite: TFavorite[]) => void;
 };
-
-export type GetFavoritePayload = {
-  data: TFavorite;
-  favorite: TFavorite[];
-};

@@ -5,7 +5,7 @@ export default async function ContactPage() {
   const contacts = await getListContacts();
   return (
     <>
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} isFavorite />
     </>
   );
 }
