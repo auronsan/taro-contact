@@ -6,8 +6,8 @@ type GradientProps = {
 
 export function getGradient(gradient: GradientProps | undefined) {
   const merged = {
-    from: gradient?.from,
-    to: gradient?.to,
+    from: gradient?.from || '0%',
+    to: gradient?.to || '0%',
     deg: gradient?.deg || 0,
   };
 
