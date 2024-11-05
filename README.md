@@ -1,14 +1,30 @@
 # Taro Contact
 
-## Features
+This is a simple contact application built with Taro and Next.js.
 
-This template comes with the following features:
+## Getting Started
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+To get started, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/auronsan/taro-contact.git
+   ```
+
+2. Copy .env.example to .env and adjust the NEXT_PUBLIC_API_BASE_URL variable to point to your API server.
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm dev
+   ```
 
 ## npm scripts
 
