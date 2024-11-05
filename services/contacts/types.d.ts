@@ -9,12 +9,16 @@ export type TContact = {
   description: string;
 };
 
-export type TAddContactPayload = {
+export type TGeneralContactPayload = {
   first_name: string;
   last_name: string;
   job: string;
   description: string;
 };
+
+export type TAddContactPayload = TGeneralContactPayload;
+
+export type TEditContactPayload = TGeneralContactPayload;
 
 export type UseGetListContactOptions = Partial<
   UseQueryOptions<TContact[], AxiosError, TContact[], string[]>

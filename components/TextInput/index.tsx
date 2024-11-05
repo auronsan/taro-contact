@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { DetailedHTMLProps, forwardRef, InputHTMLAttributes, Ref } from 'react';
 import { Box, BoxProps } from '@/components/Box';
 import classes from './textinput.module.css';
 
@@ -6,9 +6,16 @@ export type TextInputProps = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement
 > &
-  BoxProps;
-export const TextInput = (props: TextInputProps) => (
-  <Box className={classes.root}>
-    <Box component="input" className={classes.input} {...props} />
-  </Box>
-);
+  BoxProps & {
+    label?: string;
+  };
+export const TextInput = forwardRef((props: TextInputProps, _ref: Ref<HTMLInputElement>) => {
+  const { label, ...rest } = props;
+
+  return (
+    <Box className={classes.root}>
+      {label && <label className={classes.label}>{label}</label>}
+      <input className={classes.input} ref={_ref} {...rest} />
+    </Box>
+  );
+});

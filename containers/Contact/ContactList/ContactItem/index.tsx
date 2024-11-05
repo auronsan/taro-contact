@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import {
   IconBriefcase,
   IconEdit,
+  IconSettings,
   IconSpeakerphone,
   IconStar,
   IconTrash,
@@ -12,6 +14,7 @@ import { Group } from '@/components/Group';
 import { Popover } from '@/components/Popover';
 import { Stack } from '@/components/Stack';
 import { Text } from '@/components/Text';
+import { EditContactModal } from '@/containers/Contact/EditContactModal';
 import { useMutateDeleteContact } from '@/services/contacts';
 import { TContact } from '@/services/contacts/types';
 import { useGetFavorite, useMutateToggleFavorite } from '@/services/favorites';
@@ -19,6 +22,8 @@ import classes from './contactItem.module.css';
 
 export const ContactItem = (props: { contact: TContact }) => {
   const { contact } = props;
+
+  const [editModalVisible, setEditModalVisible] = useState(false);
 
   const currentFavorite = useGetFavorite(`${contact.id}`);
   const toggleFavorite = useMutateToggleFavorite(`${contact.id}`);
@@ -58,9 +63,9 @@ export const ContactItem = (props: { contact: TContact }) => {
                 {currentFavorite ? <IconStar color="orange" fill="orange" /> : <IconStar />}
               </ActionIcon>
             </Box>
-            <Popover>
+            <Popover target={<IconSettings />}>
               <Stack gap="md">
-                <ActionIcon>
+                <ActionIcon onClick={() => setEditModalVisible(true)}>
                   <Group>
                     <IconEdit />
                     Edit
@@ -78,6 +83,11 @@ export const ContactItem = (props: { contact: TContact }) => {
           </Stack>
         </Box>
       </Group>
+      <EditContactModal
+        contact={contact}
+        opened={editModalVisible}
+        onClose={() => setEditModalVisible(false)}
+      />
     </>
   );
 };

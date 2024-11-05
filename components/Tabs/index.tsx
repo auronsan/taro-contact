@@ -15,10 +15,11 @@ type TabsProps = {
   children: React.ReactNode[];
   tabs: Tab[];
   tabKey?: string;
+  rightContent?: React.ReactNode;
 };
 
 const Tabs = (props: TabsProps): React.ReactElement => {
-  const { children, tabs, tabKey = 'tab' } = props;
+  const { children, tabs, tabKey = 'tab', rightContent = <></> } = props;
 
   const searchParams = useSearchParams();
   const pathName = usePathname();
@@ -39,17 +40,22 @@ const Tabs = (props: TabsProps): React.ReactElement => {
 
   return (
     <>
-      <Group gap="sm" mb={10}>
-        {tabs?.map((tab, index) => (
-          <Button
-            key={tab.key}
-            onClick={() => handleTabClick(tab.key)}
-            v={index !== activeTabIndex ? 'outline' : 'filled'}
-          >
-            {tab.label}
-          </Button>
-        ))}
+      <Group justify="space-between" mb={10}>
+        <Group gap="sm">
+          {tabs?.map((tab, index) => (
+            <Button
+              key={tab.key}
+              onClick={() => handleTabClick(tab.key)}
+              v={index !== activeTabIndex ? 'outline' : 'filled'}
+            >
+              {tab.label}
+            </Button>
+          ))}
+        </Group>
+
+        {rightContent}
       </Group>
+
       <Box>{children[activeTabIndex]}</Box>
     </>
   );

@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { IconSettings } from '@tabler/icons-react';
 import clsx from 'clsx';
-import { ActionIcon } from '../ActionIcon';
+import { ActionIcon } from '@/components/ActionIcon';
 import classes from './popover.module.css';
 
-export const Popover = (props: { children: React.ReactNode }) => {
-  const { children } = props;
+type TPopoverProps = {
+  children: React.ReactNode;
+  target: React.ReactNode;
+};
+
+export const Popover = (props: TPopoverProps) => {
+  const { children, target = <></> } = props;
   const [visible, setVisible] = useState(false);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -28,7 +32,7 @@ export const Popover = (props: { children: React.ReactNode }) => {
           setVisible(!visible);
         }}
       >
-        <IconSettings />
+        {target}
       </ActionIcon>
       <div
         className={clsx(classes.content, {

@@ -19,29 +19,16 @@
   position: absolute;
   left: -50px;
   transform: translate(0, 10px);
-  background-color: var(--color-white);
+  background-color: light-dark(var(--color-light), var(--color-dark));
   padding: 1.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   width: auto;
   overflow: hidden;
-
-  &::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    right: calc(50% - 10px);
-    top: -8px;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #dcd9d9;
-    transition-duration: 0.3s;
-    transition-property: transform;
-  }
 }
 
 .visible {
   z-index: 10;
-  background-color: var(--color-white);
+  background-color: light-dark(var(--color-light), var(--color-dark));
   opacity: 1;
   visibility: visible;
   transform: translate(0, 10px);

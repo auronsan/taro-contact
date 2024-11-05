@@ -3,7 +3,7 @@
   --color-black: black;
   --color-white: #f4f4f4;
   --color-light: #efedea;
-  --color-dark: #223a2c;
+  --color-dark: #252a27;
 
   --color-red: #f44336;
   --color-red-hover: #d32f2f;
@@ -46,8 +46,8 @@
 }
 
 body {
-  color: light-dark(#333b3c, #efefec);
-  background-color: light-dark(#efedea, #223a2c);
+  color: light-dark(var(--color-black), var(--color-white));
+  background-color: light-dark(var(--color-light), var(--color-dark));
   margin: 0;
   --input-bd: var(--color-black);
   --input-bg: var(--color-white);

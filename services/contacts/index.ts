@@ -4,6 +4,7 @@ import { axiosClient } from '@/lib/axios';
 import type {
   TAddContactPayload,
   TContact,
+  TEditContactPayload,
   UseGetListContactOptions,
   UseGetListContactPayload,
 } from '@/services/contacts/types';
@@ -94,6 +95,36 @@ export const useMutateAddContact = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: addContact,
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
+    },
+    onError: (e: AxiosError<string>) => {
+      if (e.response) {
+        const html = e.response.data;
+        if (!html) return;
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const errorElement = doc.querySelector('h1');
+        if (errorElement) {
+          console.log(errorElement.textContent);
+        }
+      }
+    },
+  });
+};
+
+export const editContact = async (id: number, payload: TEditContactPayload) => {
+  const response = await axiosClient.patch(`/contacts/${id}`, {
+    info: payload,
+  });
+
+  return response.status === 200;
+};
+
+export const useMutateEditContact = (id: number) => {
+  const queryClient = useQueryClient();
+  return useMutation<boolean, AxiosError<string>, TEditContactPayload>({
+    mutationFn: (payload) => editContact(id, payload),
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
     },

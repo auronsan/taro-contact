@@ -16,8 +16,11 @@ type TContactListProps = {
 };
 
 export const ContactList = (props: TContactListProps): React.ReactElement => {
-  const searchParam = useSearchParams();
-  const queryParam = searchParam?.get('q');
+  const searchParams = useSearchParams();
+  const queryParam = searchParams?.get('q');
+  const sortParams = searchParams?.get('sort') as keyof TContact;
+  const orderParams = searchParams?.get('order') as 'asc' | 'desc';
+
   const { contacts: initialData, isFavorite = false } = props;
   const { data, isLoading } = useGetListContacts(
     {
@@ -25,7 +28,8 @@ export const ContactList = (props: TContactListProps): React.ReactElement => {
     },
     {
       filter: queryParam || '',
-      sort: 'id',
+      sort: sortParams || 'id',
+      order: orderParams || 'asc',
     }
   );
   const favorites = useGetFavorites();

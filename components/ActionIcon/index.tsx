@@ -1,4 +1,4 @@
-import { Box } from '../Box';
+import { Box } from '@/components/Box';
 import classes from './actionIcon.module.css';
 
 type TActionIconProps = {

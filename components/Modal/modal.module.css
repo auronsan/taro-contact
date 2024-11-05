@@ -22,7 +22,16 @@
   position: relative;
   width: 500px;
   max-width: 90%;
-  background: #fff;
+  background: light-dark(var(--color-light), var(--color-dark));
   padding: 1em 2em;
   z-index: calc(var(--overlay-z-index) + 2);
+}
+
+.title {
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 15px 0;
 }

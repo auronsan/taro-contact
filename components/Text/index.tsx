@@ -6,6 +6,7 @@ import classes from './text.module.css';
 export type TextProps = {
   children: React.ReactNode;
   component?: keyof JSX.IntrinsicElements;
+  className?: string;
   gradient?: { from: string; to: string; deg?: number };
   style?: React.CSSProperties;
   // text-align
@@ -25,6 +26,7 @@ export type TextProps = {
 
 export const Text = ({
   children,
+  className,
   component = 'span',
   gradient,
   ta = 'left',
@@ -40,7 +42,7 @@ export const Text = ({
 
   return (
     <Component
-      className={clsx({
+      className={clsx(className, {
         [classes.text]: true,
         [classes['text-gradient']]: gradient,
         [classes[`ta-${ta}`]]: ta === 'center',
