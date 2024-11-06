@@ -54,3 +54,15 @@ export const WithActiveTab = () => (
     <div>Content for Tab 3</div>
   </Tabs>
 );
+
+export const WithIcon = () => (
+  <Tabs
+    tabs={[
+      { key: 'tab1', label: 'Tab 1', icon: 'list' },
+      { key: 'tab2', label: 'Tab 2', icon: 'star' },
+    ]}
+  >
+    <div>Content for Tab 1</div>
+    <div>Content for Tab 2</div>
+  </Tabs>
+);

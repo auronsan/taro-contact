@@ -3,13 +3,16 @@
 import { Suspense, useMemo } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useMediaQuery } from '@mantine/hooks';
+import { IconList, IconStar } from '@tabler/icons-react';
 import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
 import { Group } from '@/components/Group';
+import { Text } from '@/components/Text';
 
 type Tab = {
   key: string;
   label: string;
+  icon?: string;
 };
 
 type TabsProps = {
@@ -52,7 +55,10 @@ const TabsComponent = (props: TabsProps): React.ReactElement => {
               v={index !== activeTabIndex ? 'outline' : 'filled'}
               flex={isMobile ? 1 : undefined}
             >
-              {tab.label}
+              <Group gap="xs">
+                {tab.icon && stringToIcon(tab.icon)}
+                <Text> {tab.label}</Text>
+              </Group>
             </Button>
           ))}
         </Group>
@@ -74,3 +80,14 @@ export const Tabs = (props: TabsProps) => (
     <TabsComponent {...props} />
   </Suspense>
 );
+
+const stringToIcon = (icon: string) => {
+  switch (icon) {
+    case 'list':
+      return <IconList />;
+    case 'star':
+      return <IconStar />;
+    default:
+      return '';
+  }
+};

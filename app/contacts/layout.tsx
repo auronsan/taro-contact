@@ -12,7 +12,13 @@ export default function Layout({
   list: React.ReactNode;
 }) {
   return (
-    <Container fluid>
+    <Container
+      fluid
+      style={{
+        minHeight: '100vh',
+        height: '100%',
+      }}
+    >
       <Header />
       <Box px={30} py={10}>
         <Tabs
@@ -20,10 +26,12 @@ export default function Layout({
             {
               label: 'List',
               key: 'list',
+              icon: 'list',
             },
             {
               label: 'Favorite',
               key: 'favorite',
+              icon: 'star',
             },
           ]}
           tabKey="tab-contact"
