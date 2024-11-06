@@ -35,9 +35,8 @@ export const AddContactModal = (props: TAddContactModalProps): React.ReactElemen
     validateInputOnBlur: true,
   });
 
-  const onSubmit = () => {};
-
-  const onAddContact = async () => {
+  const onAddContact = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
     const validate = form.validate();
     if (validate.hasErrors) {
       showError(validate.errors);
@@ -51,43 +50,39 @@ export const AddContactModal = (props: TAddContactModalProps): React.ReactElemen
   return (
     <>
       <Modal visible={opened} onClose={() => onClose()} title="Add Contact">
-        <form
-          id="add-contact-form"
-          data-testid="add-contact-form"
-          onSubmit={form.onSubmit(onSubmit)}
-        >
+        <form id="add-contact-form" data-testid="add-contact-form">
           <Stack gap="lg">
             <Stack>
               <FormInput
                 form={form}
                 fieldName="first_name"
-                placeholder="input your first name"
+                placeholder="Input your first name"
                 label="First Name"
                 id="add-contact-first-name"
               />
               <FormInput
                 form={form}
                 fieldName="last_name"
-                placeholder="input your last name"
+                placeholder="Input your last name"
                 label="Last Name"
                 id="add-contact-last-name"
               />
               <FormInput
                 form={form}
                 fieldName="job"
-                placeholder="input your job"
+                placeholder="Input your job"
                 label="Job"
                 id="add-contact-job"
               />
               <FormInput
                 form={form}
                 fieldName="description"
-                placeholder="input your description"
+                placeholder="Input your description"
                 label="Description"
                 id="add-contact-description"
               />
             </Stack>
-            <Button onClick={() => onAddContact()} type="submit" id="add-contact-submit">
+            <Button onClick={onAddContact} type="submit" id="add-contact-submit">
               Add
             </Button>
           </Stack>

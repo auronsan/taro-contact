@@ -31,9 +31,8 @@ export const EditContactModal = (props: TAddContactModalProps): React.ReactEleme
     },
   });
 
-  const onSubmit = () => {};
-
-  const onEditContact = async () => {
+  const onEditContact = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
     const validate = form.validate();
     if (validate.hasErrors) {
       showError(validate.errors);
@@ -47,11 +46,7 @@ export const EditContactModal = (props: TAddContactModalProps): React.ReactEleme
   return (
     <>
       <Modal visible={opened} onClose={() => onClose()} title="Edit Contact">
-        <form
-          id="edit-contact-form"
-          data-testid="edit-contact-form"
-          onSubmit={form.onSubmit(onSubmit)}
-        >
+        <form id="edit-contact-form" data-testid="edit-contact-form">
           <Stack gap="lg">
             <Stack>
               <FormInput
@@ -83,7 +78,7 @@ export const EditContactModal = (props: TAddContactModalProps): React.ReactEleme
                 id="edit-contact-description"
               />
             </Stack>
-            <Button onClick={() => onEditContact()} id="edit-contact-submit" type="submit">
+            <Button onClick={onEditContact} id="edit-contact-submit" type="submit">
               Update
             </Button>
           </Stack>

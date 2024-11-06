@@ -76,11 +76,25 @@ export const deleteContact = async (id: number) => {
 };
 
 export const useMutateDeleteContact = (id: number) => {
+  const { showToast, showError } = useToast();
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: () => deleteContact(id),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: [CONTACT_QUERY_KEY] });
+      showToast({
+        message: 'Successfully Delete contact',
+      });
+    },
+    onError: (e: AxiosError<string>) => {
+      if (e.response) {
+        const html = e.response.data;
+        if (!html) return;
+        const errorElement = parseHTMLError(html);
+        if (errorElement) {
+          showError(errorElement);
+        }
+      }
     },
   });
 };
@@ -110,11 +124,9 @@ export const useMutateAddContact = () => {
       if (e.response) {
         const html = e.response.data;
         if (!html) return;
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const errorElement = doc.querySelector('h1');
+        const errorElement = parseHTMLError(html);
         if (errorElement) {
-          showError(errorElement.textContent);
+          showError(errorElement);
         }
       }
     },
@@ -146,13 +158,18 @@ export const useMutateEditContact = (id: number) => {
       if (e.response) {
         const html = e.response.data;
         if (!html) return;
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const errorElement = doc.querySelector('h1');
+        const errorElement = parseHTMLError(html);
         if (errorElement) {
-          showError(errorElement.textContent);
+          showError(errorElement);
         }
       }
     },
   });
+};
+
+const parseHTMLError = (html: string) => {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const errorElement = doc.querySelector('h1');
+  return errorElement?.textContent;
 };

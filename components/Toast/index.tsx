@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { IconCircleCheck, IconCircleX } from '@tabler/icons-react';
 import clsx from 'clsx';
 import { Box } from '@/components/Box';
 import { Stack } from '@/components/Stack';
+import { Group } from '../Group';
 import classes from './toast.module.css';
 
 type ToastProps = {
@@ -50,7 +52,11 @@ export const Toast = ({
         [classes.error]: type === 'error',
       })}
     >
-      {message}
+      <Group gap="xs">
+        {type === 'success' && <IconCircleCheck size={20} color="white" />}
+        {type === 'error' && <IconCircleX size={20} color="white" />}
+        {message}
+      </Group>
     </Box>
   );
 };
