@@ -61,7 +61,10 @@ export const ContactItem = (props: { contact: TContact }) => {
         <Box>
           <Stack>
             <Box>
-              <ActionIcon onClick={() => toggleFavorite.mutate()}>
+              <ActionIcon
+                onClick={() => toggleFavorite.mutate()}
+                id={`favorite-contact-${currentFavorite ? 'remove' : 'add'}-${contact.id}`}
+              >
                 {currentFavorite ? <IconStar color="orange" fill="orange" /> : <IconStar />}
               </ActionIcon>
             </Box>
