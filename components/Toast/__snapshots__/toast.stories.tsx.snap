@@ -47,7 +47,7 @@ exports[`Components/Toast Success smoke-test 1`] = `
        data-testid="toast-container"
        style="padding: 0px;"
   >
-    <div class="toast_toast__tBw0J toast_visible___6NKv toast_success__TUm0C">
+    <div class="toast_toast__tBw0J toast_success__TUm0C">
       Success Toast
     </div>
   </div>

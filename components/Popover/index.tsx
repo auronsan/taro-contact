@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import { ActionIcon } from '@/components/ActionIcon';
 import classes from './popover.module.css';
@@ -12,9 +12,10 @@ type TPopoverProps = {
 export const Popover = (props: TPopoverProps) => {
   const { children, target = <></>, targetId } = props;
   const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (visible && !(event.target as Element).closest(`.${classes.content}`)) {
+    if (visible && !ref.current?.contains(event.target as Node)) {
       setVisible(false);
     }
   };
@@ -27,7 +28,7 @@ export const Popover = (props: TPopoverProps) => {
   }, [visible]);
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper} ref={ref}>
       <ActionIcon
         onClick={() => {
           setVisible(!visible);

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
+import { IconCirclePlus } from '@tabler/icons-react';
 import { Anchor } from '@/components/Anchor';
 import { Box } from '@/components/Box';
 import { Button } from '@/components/Button';
@@ -9,6 +10,7 @@ import { Group } from '@/components/Group';
 import { HamburgerMenu } from '@/components/HamburgerMenu';
 import { SearchBar } from '@/components/SearchBar';
 import { Stack } from '@/components/Stack';
+import { Text } from '@/components/Text';
 import { ToggleColorScheme } from '@/components/ToggleColorScheme';
 import { AddContactModal } from '@/containers/Contact/AddContactModal';
 
@@ -44,7 +46,10 @@ export const Header = () => {
               <Group>
                 <ToggleColorScheme />
                 <Button onClick={() => setAddModal(true)} id="add-contact-button">
-                  Add
+                  <Group gap="xs">
+                    <Text>Add</Text>
+                    <IconCirclePlus />
+                  </Group>
                 </Button>
               </Group>
             )}

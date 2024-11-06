@@ -35,19 +35,18 @@ export const getListContacts = async (
     result = result.sort((a, b) => {
       const valueA = a[sort];
       const valueB = b[sort];
+
+      if (typeof valueA === 'number' && typeof valueB === 'number') {
+        return order === 'asc' ? valueA - valueB : valueB - valueA;
+      }
+
       if (typeof valueA === 'number' || typeof valueB === 'number') {
-        if (typeof valueA === 'number' && typeof valueB === 'number') {
-          if (order === 'asc') {
-            return valueA - valueB;
-          }
-          return valueB - valueA;
-        }
         return -1;
       }
-      if (order === 'asc') {
-        return valueA.localeCompare(valueB);
-      }
-      return valueB.localeCompare(valueA);
+
+      const comparison =
+        order === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
+      return comparison;
     });
   }
 

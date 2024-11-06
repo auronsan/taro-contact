@@ -19,7 +19,6 @@
   position: absolute;
   left: -50px;
   transform: translate(0, 10px);
-  background-color: light-dark(var(--color-light), var(--color-dark));
   padding: 1.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   width: auto;
@@ -29,7 +28,7 @@
 
 .visible {
   z-index: 10;
-  background-color: light-dark(var(--color-light), var(--color-dark));
+  background-color: light-dark(var(--color-white), var(--color-black));
   opacity: 1;
   visibility: visible;
   transform: translate(0, 10px);

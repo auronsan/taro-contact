@@ -72,7 +72,29 @@ exports[`containers/Header Usage smoke-test 1`] = `
                   data-testid="add-contact-button"
                   id="add-contact-button"
           >
-            Add
+            <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+              <span class="text_text__ynNTn text_fs-md__gO30j">
+                Add
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="24"
+                   height="24"
+                   viewbox="0 0 24 24"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   class="tabler-icon tabler-icon-circle-plus "
+              >
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0">
+                </path>
+                <path d="M9 12h6">
+                </path>
+                <path d="M12 9v6">
+                </path>
+              </svg>
+            </div>
           </button>
         </div>
       </div>
