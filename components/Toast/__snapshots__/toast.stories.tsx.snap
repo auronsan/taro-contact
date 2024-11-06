@@ -7,8 +7,26 @@ exports[`Components/Toast Default smoke-test 1`] = `
        data-testid="toast-container"
        style="padding: 0px;"
   >
-    <div class="toast_toast__tBw0J toast_success__TUm0C">
-      Default Toast
+    <div class="toast_toast__tBw0J toast_visible___6NKv toast_success__TUm0C">
+      <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="20"
+             height="20"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="white"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-circle-check "
+        >
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0">
+          </path>
+          <path d="M9 12l2 2l4 -4">
+          </path>
+        </svg>
+        Default Toast
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -27,8 +45,26 @@ exports[`Components/Toast Error smoke-test 1`] = `
        data-testid="toast-container"
        style="padding: 0px;"
   >
-    <div class="toast_toast__tBw0J toast_error__SGlCN">
-      Error Toast
+    <div class="toast_toast__tBw0J toast_visible___6NKv toast_error__SGlCN">
+      <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="20"
+             height="20"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="white"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-circle-x "
+        >
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0">
+          </path>
+          <path d="M10 10l4 4m0 -4l-4 4">
+          </path>
+        </svg>
+        Error Toast
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -48,7 +84,25 @@ exports[`Components/Toast Success smoke-test 1`] = `
        style="padding: 0px;"
   >
     <div class="toast_toast__tBw0J toast_success__TUm0C">
-      Success Toast
+      <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="20"
+             height="20"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="white"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-circle-check "
+        >
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0">
+          </path>
+          <path d="M9 12l2 2l4 -4">
+          </path>
+        </svg>
+        Success Toast
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -67,8 +121,26 @@ exports[`Components/Toast WithDuration smoke-test 1`] = `
        data-testid="toast-container"
        style="padding: 0px;"
   >
-    <div class="toast_toast__tBw0J toast_success__TUm0C">
-      Toast with Duration
+    <div class="toast_toast__tBw0J toast_visible___6NKv toast_success__TUm0C">
+      <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="20"
+             height="20"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="white"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-circle-check "
+        >
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0">
+          </path>
+          <path d="M9 12l2 2l4 -4">
+          </path>
+        </svg>
+        Toast with Duration
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
