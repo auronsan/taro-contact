@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Roboto } from 'next/font/google';
 import { addons } from '@storybook/preview-api';
-import { Container } from '@/components/Container';
 import { GlobalProvider } from '@/providers/GlobalProvider';
 
 import '@/app/global.css';
