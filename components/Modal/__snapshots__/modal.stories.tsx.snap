@@ -2,46 +2,48 @@
 
 exports[`components/Modal Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="modal_root__sNYp1 modal_visible__O_tN_">
-    <div class="modal_content__sk_ym">
-      <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
-           style="padding: 0px;"
-      >
-        <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB">
-          <div>
-            <span class="modal_title__f3q0X text_text__ynNTn text_fs-md__gO30j">
-              Modal Title
-            </span>
-          </div>
-          <div>
-            <div class="actionIcon_root__jjWKK"
-                 role="button"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="24"
-                   height="24"
-                   viewbox="0 0 24 24"
-                   fill="none"
-                   stroke="currentColor"
-                   stroke-width="2"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   class="tabler-icon tabler-icon-x "
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="modal_root__sNYp1 modal_visible__O_tN_">
+      <div class="modal_content__sk_ym">
+        <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
+             style="padding: 0px;"
+        >
+          <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB">
+            <div>
+              <span class="modal_title__f3q0X text_text__ynNTn text_fs-md__gO30j">
+                Modal Title
+              </span>
+            </div>
+            <div>
+              <div class="actionIcon_root__jjWKK"
+                   role="button"
               >
-                <path d="M18 6l-12 12">
-                </path>
-                <path d="M6 6l12 12">
-                </path>
-              </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewbox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="tabler-icon tabler-icon-x "
+                >
+                  <path d="M18 6l-12 12">
+                  </path>
+                  <path d="M6 6l12 12">
+                  </path>
+                </svg>
+              </div>
             </div>
           </div>
+          <p>
+            Modal content goes here
+          </p>
         </div>
-        <p>
-          Modal content goes here
-        </p>
       </div>
-    </div>
-    <div class="overlay_root__me_uh">
+      <div class="overlay_root__me_uh">
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -55,6 +57,8 @@ exports[`components/Modal Default smoke-test 1`] = `
 
 exports[`components/Modal Hidden smoke-test 1`] = `
 <main class="roboto-normal">
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"

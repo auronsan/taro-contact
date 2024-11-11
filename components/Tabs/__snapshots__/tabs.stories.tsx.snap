@@ -2,42 +2,44 @@
 
 exports[`Components/Tabs Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 1
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 2
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 3
-          </span>
-        </div>
-      </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 1
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 2
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 3
+            </span>
+          </div>
+        </button>
+      </div>
+      <div>
+      </div>
     </div>
     <div>
-    </div>
-  </div>
-  <div>
-    <div>
-      Content for Tab 1
+      <div>
+        Content for Tab 1
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -51,42 +53,44 @@ exports[`Components/Tabs Default smoke-test 1`] = `
 
 exports[`Components/Tabs WithActiveTab smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 1
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 2
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 3
-          </span>
-        </div>
-      </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 1
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 2
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 3
+            </span>
+          </div>
+        </button>
+      </div>
+      <div>
+      </div>
     </div>
     <div>
-    </div>
-  </div>
-  <div>
-    <div>
-      Content for Tab 1
+      <div>
+        Content for Tab 1
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -100,71 +104,73 @@ exports[`Components/Tabs WithActiveTab smoke-test 1`] = `
 
 exports[`Components/Tabs WithIcon smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="24"
-               height="24"
-               viewbox="0 0 24 24"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="2"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               class="tabler-icon tabler-icon-list "
-          >
-            <path d="M9 6l11 0">
-            </path>
-            <path d="M9 12l11 0">
-            </path>
-            <path d="M9 18l11 0">
-            </path>
-            <path d="M5 6l0 .01">
-            </path>
-            <path d="M5 12l0 .01">
-            </path>
-            <path d="M5 18l0 .01">
-            </path>
-          </svg>
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 1
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="24"
-               height="24"
-               viewbox="0 0 24 24"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="2"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               class="tabler-icon tabler-icon-star "
-          >
-            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
-            </path>
-          </svg>
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 2
-          </span>
-        </div>
-      </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewbox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 class="tabler-icon tabler-icon-list "
+            >
+              <path d="M9 6l11 0">
+              </path>
+              <path d="M9 12l11 0">
+              </path>
+              <path d="M9 18l11 0">
+              </path>
+              <path d="M5 6l0 .01">
+              </path>
+              <path d="M5 12l0 .01">
+              </path>
+              <path d="M5 18l0 .01">
+              </path>
+            </svg>
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 1
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewbox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 class="tabler-icon tabler-icon-star "
+            >
+              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+              </path>
+            </svg>
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 2
+            </span>
+          </div>
+        </button>
+      </div>
+      <div>
+      </div>
     </div>
     <div>
-    </div>
-  </div>
-  <div>
-    <div>
-      Content for Tab 1
+      <div>
+        Content for Tab 1
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -178,45 +184,47 @@ exports[`Components/Tabs WithIcon smoke-test 1`] = `
 
 exports[`Components/Tabs WithRightContent smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-    <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 1
-          </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+      <div class="group_root__JMRrN group_gap-sm__VCWmB group_fullWidth__KxvAQ">
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 1
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 2
+            </span>
+          </div>
+        </button>
+        <button type="button"
+                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+        >
+          <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+            <span class="text_text__ynNTn text_fs-md__gO30j">
+              Tab 3
+            </span>
+          </div>
+        </button>
+      </div>
+      <div>
+        <div>
+          Right Content
         </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 2
-          </span>
-        </div>
-      </button>
-      <button type="button"
-              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-      >
-        <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-          <span class="text_text__ynNTn text_fs-md__gO30j">
-            Tab 3
-          </span>
-        </div>
-      </button>
+      </div>
     </div>
     <div>
       <div>
-        Right Content
+        Content for Tab 1
       </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      Content for Tab 1
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"

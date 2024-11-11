@@ -2,17 +2,19 @@
 
 exports[`Components/Stack Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -26,17 +28,19 @@ exports[`Components/Stack Default smoke-test 1`] = `
 
 exports[`Components/Stack GapLg smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-lg__eTmHP"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-lg__eTmHP"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -50,17 +54,19 @@ exports[`Components/Stack GapLg smoke-test 1`] = `
 
 exports[`Components/Stack GapMd smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-md__l1Cy_"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-md__l1Cy_"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -74,17 +80,19 @@ exports[`Components/Stack GapMd smoke-test 1`] = `
 
 exports[`Components/Stack GapSm smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -98,17 +106,19 @@ exports[`Components/Stack GapSm smoke-test 1`] = `
 
 exports[`Components/Stack GapXl smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-xl__Nmb1t"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-xl__Nmb1t"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -122,17 +132,19 @@ exports[`Components/Stack GapXl smoke-test 1`] = `
 
 exports[`Components/Stack GapXs smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-xs__xTnny"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-xs__xTnny"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -146,17 +158,19 @@ exports[`Components/Stack GapXs smoke-test 1`] = `
 
 exports[`Components/Stack JustifyCenter smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_justify-center__CmTLW stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_justify-center__CmTLW stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -170,17 +184,19 @@ exports[`Components/Stack JustifyCenter smoke-test 1`] = `
 
 exports[`Components/Stack JustifyEnd smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_justify-end___HBdD stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_justify-end___HBdD stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -194,17 +210,19 @@ exports[`Components/Stack JustifyEnd smoke-test 1`] = `
 
 exports[`Components/Stack JustifySpaceBetween smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_justify-space-between__v6A4W stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_justify-space-between__v6A4W stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -218,17 +236,19 @@ exports[`Components/Stack JustifySpaceBetween smoke-test 1`] = `
 
 exports[`Components/Stack NoWrap smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_stack-nowrap__DhAIU stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_stack-nowrap__DhAIU stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -242,17 +262,19 @@ exports[`Components/Stack NoWrap smoke-test 1`] = `
 
 exports[`Components/Stack Padding smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
-       style="padding: 16px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
+         style="padding: 16px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -266,17 +288,19 @@ exports[`Components/Stack Padding smoke-test 1`] = `
 
 exports[`Components/Stack Wrap smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_stack-wrap__OMIUk stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div>
-      Item 1
-    </div>
-    <div>
-      Item 2
-    </div>
-    <div>
-      Item 3
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_stack-wrap__OMIUk stack_gap-sm__rrtkk"
+         style="padding: 0px;"
+    >
+      <div>
+        Item 1
+      </div>
+      <div>
+        Item 2
+      </div>
+      <div>
+        Item 3
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"

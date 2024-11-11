@@ -2,20 +2,22 @@
 
 exports[`components/LoadingOverlay Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="loadingoverlay_root__Dpy3f"
-       style="transition-property: opacity; transition-duration: 300ms; transition-timing-function: ease; opacity: 1;"
-  >
-    <span class="loader_root__PzLDe loader_barsLoader__m37dO loadingoverlay_loader__VXqH2"
-          data-testid="loading-overlay"
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="loadingoverlay_root__Dpy3f"
+         style="transition-property: opacity; transition-duration: 300ms; transition-timing-function: ease; opacity: 1;"
     >
-      <span class="loader_bar__7sZw3">
+      <span class="loader_root__PzLDe loader_barsLoader__m37dO loadingoverlay_loader__VXqH2"
+            data-testid="loading-overlay"
+      >
+        <span class="loader_bar__7sZw3">
+        </span>
+        <span class="loader_bar__7sZw3">
+        </span>
+        <span class="loader_bar__7sZw3">
+        </span>
       </span>
-      <span class="loader_bar__7sZw3">
-      </span>
-      <span class="loader_bar__7sZw3">
-      </span>
-    </span>
-    <div class="overlay_root__me_uh">
+      <div class="overlay_root__me_uh">
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -29,6 +31,8 @@ exports[`components/LoadingOverlay Default smoke-test 1`] = `
 
 exports[`components/LoadingOverlay Hidden smoke-test 1`] = `
 <main class="roboto-normal">
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"

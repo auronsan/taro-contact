@@ -2,59 +2,61 @@
 
 exports[`components/HamburgerMenu Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="hambugerMenu_hamburger-menu__z2Kmd">
-    <button type="button"
-            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="24"
-           height="24"
-           viewbox="0 0 24 24"
-           fill="none"
-           stroke="currentColor"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-           class="tabler-icon tabler-icon-menu-2 "
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="hambugerMenu_hamburger-menu__z2Kmd">
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
       >
-        <path d="M4 6l16 0">
-        </path>
-        <path d="M4 12l16 0">
-        </path>
-        <path d="M4 18l16 0">
-        </path>
-      </svg>
-    </button>
-    <div class="hambugerMenu_hamburger-menu-content__Sy1U0">
-      <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
-           style="padding: 30px;"
-      >
-        <span class="text_text__ynNTn text_fs-md__gO30j">
-          Taro Contact
-        </span>
-        <button type="button"
-                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="24"
+             height="24"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-menu-2 "
         >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="24"
-               height="24"
-               viewbox="0 0 24 24"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="2"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               class="tabler-icon tabler-icon-x "
+          <path d="M4 6l16 0">
+          </path>
+          <path d="M4 12l16 0">
+          </path>
+          <path d="M4 18l16 0">
+          </path>
+        </svg>
+      </button>
+      <div class="hambugerMenu_hamburger-menu-content__Sy1U0">
+        <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
+             style="padding: 30px;"
+        >
+          <span class="text_text__ynNTn text_fs-md__gO30j">
+            Taro Contact
+          </span>
+          <button type="button"
+                  class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
           >
-            <path d="M18 6l-12 12">
-            </path>
-            <path d="M6 6l12 12">
-            </path>
-          </svg>
-        </button>
-      </div>
-      <div>
-        Menu Content
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewbox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 class="tabler-icon tabler-icon-x "
+            >
+              <path d="M18 6l-12 12">
+              </path>
+              <path d="M6 6l12 12">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          Menu Content
+        </div>
       </div>
     </div>
   </div>
@@ -69,59 +71,61 @@ exports[`components/HamburgerMenu Default smoke-test 1`] = `
 
 exports[`components/HamburgerMenu WithOpen smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="hambugerMenu_hamburger-menu__z2Kmd">
-    <button type="button"
-            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="24"
-           height="24"
-           viewbox="0 0 24 24"
-           fill="none"
-           stroke="currentColor"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-           class="tabler-icon tabler-icon-menu-2 "
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="hambugerMenu_hamburger-menu__z2Kmd">
+      <button type="button"
+              class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
       >
-        <path d="M4 6l16 0">
-        </path>
-        <path d="M4 12l16 0">
-        </path>
-        <path d="M4 18l16 0">
-        </path>
-      </svg>
-    </button>
-    <div class="hambugerMenu_hamburger-menu-content__Sy1U0">
-      <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
-           style="padding: 30px;"
-      >
-        <span class="text_text__ynNTn text_fs-md__gO30j">
-          Taro Contact
-        </span>
-        <button type="button"
-                class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="24"
+             height="24"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-menu-2 "
         >
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="24"
-               height="24"
-               viewbox="0 0 24 24"
-               fill="none"
-               stroke="currentColor"
-               stroke-width="2"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               class="tabler-icon tabler-icon-x "
+          <path d="M4 6l16 0">
+          </path>
+          <path d="M4 12l16 0">
+          </path>
+          <path d="M4 18l16 0">
+          </path>
+        </svg>
+      </button>
+      <div class="hambugerMenu_hamburger-menu-content__Sy1U0">
+        <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
+             style="padding: 30px;"
+        >
+          <span class="text_text__ynNTn text_fs-md__gO30j">
+            Taro Contact
+          </span>
+          <button type="button"
+                  class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
           >
-            <path d="M18 6l-12 12">
-            </path>
-            <path d="M6 6l12 12">
-            </path>
-          </svg>
-        </button>
-      </div>
-      <div>
-        Menu Content
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewbox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 class="tabler-icon tabler-icon-x "
+            >
+              <path d="M18 6l-12 12">
+              </path>
+              <path d="M6 6l12 12">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          Menu Content
+        </div>
       </div>
     </div>
   </div>

@@ -2,7 +2,9 @@
 
 exports[`components/Overlay Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="overlay_root__me_uh">
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="overlay_root__me_uh">
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"

@@ -2,11 +2,13 @@
 
 exports[`components/Button withChildren smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -18,11 +20,13 @@ exports[`components/Button withChildren smoke-test 1`] = `
 
 exports[`components/Button withCustomClassName smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC custom-class"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC custom-class"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -34,12 +38,14 @@ exports[`components/Button withCustomClassName smoke-test 1`] = `
 
 exports[`components/Button withFlexStyle smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-          style="flex: 2 1 0%;"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+            style="flex: 2 1 0%;"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -51,11 +57,13 @@ exports[`components/Button withFlexStyle smoke-test 1`] = `
 
 exports[`components/Button withOnClick smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -67,11 +75,13 @@ exports[`components/Button withOnClick smoke-test 1`] = `
 
 exports[`components/Button withOutlineVariant smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-outline__hdUZT"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -83,11 +93,13 @@ exports[`components/Button withOutlineVariant smoke-test 1`] = `
 
 exports[`components/Button withRedColor smoke-test 1`] = `
 <main class="roboto-normal">
-  <button type="button"
-          class="button_root__s7zfG button_button-red__lET9U button_button-variant-filled__Dz0lC"
-  >
-    Click Me
-  </button>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <button type="button"
+            class="button_root__s7zfG button_button-red__lET9U button_button-variant-filled__Dz0lC"
+    >
+      Click Me
+    </button>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"

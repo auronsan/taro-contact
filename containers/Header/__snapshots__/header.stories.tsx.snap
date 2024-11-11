@@ -2,100 +2,102 @@
 
 exports[`containers/Header Usage smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
-       style="padding: 0px;"
-  >
-    <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
-         style="padding: 20px;"
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="stack_root__KVCbK stack_gap-sm__rrtkk"
+         style="padding: 0px;"
     >
-      <a href="/"
-         class="anchor_root__e1GyS"
+      <div class="group_root__JMRrN group_justify-space-between__ZZe3p group_gap-sm__VCWmB"
+           style="padding: 20px;"
       >
-        Contact List
-      </a>
-      <div style="flex: 0.8 1 0%;">
-        <div class="group_root__JMRrN group_group-nowrap__oIm_1 group_gap-sm__VCWmB">
-          <div style="flex: 1 1 0%;">
-            <div class="textinput_root__IJOrE">
-              <input class="textinput_input__ICHQz"
-                     placeholder="Search"
-                     value
-              >
+        <a href="/"
+           class="anchor_root__e1GyS"
+        >
+          Contact List
+        </a>
+        <div style="flex: 0.8 1 0%;">
+          <div class="group_root__JMRrN group_group-nowrap__oIm_1 group_gap-sm__VCWmB">
+            <div style="flex: 1 1 0%;">
+              <div class="textinput_root__IJOrE">
+                <input class="textinput_input__ICHQz"
+                       placeholder="Search"
+                       value
+                >
+              </div>
             </div>
-          </div>
-          <div class="actionIcon_root__jjWKK"
-               role="button"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="24"
-                 height="24"
-                 viewbox="0 0 24 24"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2"
-                 stroke-linecap="round"
-                 stroke-linejoin="round"
-                 class="tabler-icon tabler-icon-search "
+            <div class="actionIcon_root__jjWKK"
+                 role="button"
             >
-              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
-              </path>
-              <path d="M21 21l-6 -6">
-              </path>
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="24"
+                   height="24"
+                   viewbox="0 0 24 24"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   class="tabler-icon tabler-icon-search "
+              >
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
+                </path>
+                <path d="M21 21l-6 -6">
+                </path>
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="group_root__JMRrN group_gap-sm__VCWmB">
-          <div class="actionIcon_root__jjWKK"
-               role="button"
-          >
-            <div class="group_root__JMRrN group_gap-sm__VCWmB">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="24"
-                   height="24"
-                   viewbox="0 0 24 24"
-                   fill="none"
-                   stroke="currentColor"
-                   stroke-width="2"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   class="tabler-icon tabler-icon-moon "
-              >
-                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z">
-                </path>
-              </svg>
+        <div>
+          <div class="group_root__JMRrN group_gap-sm__VCWmB">
+            <div class="actionIcon_root__jjWKK"
+                 role="button"
+            >
+              <div class="group_root__JMRrN group_gap-sm__VCWmB">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewbox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="tabler-icon tabler-icon-moon "
+                >
+                  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z">
+                  </path>
+                </svg>
+              </div>
             </div>
+            <button type="button"
+                    class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
+                    data-testid="add-contact-button"
+                    id="add-contact-button"
+            >
+              <div class="group_root__JMRrN group_gap-xs__LrIiJ">
+                <span class="text_text__ynNTn text_fs-md__gO30j">
+                  Add
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewbox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="tabler-icon tabler-icon-circle-plus "
+                >
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0">
+                  </path>
+                  <path d="M9 12h6">
+                  </path>
+                  <path d="M12 9v6">
+                  </path>
+                </svg>
+              </div>
+            </button>
           </div>
-          <button type="button"
-                  class="button_root__s7zfG button_button-primary__cWRWo button_button-variant-filled__Dz0lC"
-                  data-testid="add-contact-button"
-                  id="add-contact-button"
-          >
-            <div class="group_root__JMRrN group_gap-xs__LrIiJ">
-              <span class="text_text__ynNTn text_fs-md__gO30j">
-                Add
-              </span>
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="24"
-                   height="24"
-                   viewbox="0 0 24 24"
-                   fill="none"
-                   stroke="currentColor"
-                   stroke-width="2"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   class="tabler-icon tabler-icon-circle-plus "
-              >
-                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0">
-                </path>
-                <path d="M9 12h6">
-                </path>
-                <path d="M12 9v6">
-                </path>
-              </svg>
-            </div>
-          </button>
         </div>
       </div>
     </div>

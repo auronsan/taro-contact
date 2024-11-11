@@ -2,34 +2,36 @@
 
 exports[`components/SearchBar Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_group-nowrap__oIm_1 group_gap-sm__VCWmB">
-    <div style="flex: 1 1 0%;">
-      <div class="textinput_root__IJOrE">
-        <input class="textinput_input__ICHQz"
-               placeholder="Search"
-               value
-        >
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_group-nowrap__oIm_1 group_gap-sm__VCWmB">
+      <div style="flex: 1 1 0%;">
+        <div class="textinput_root__IJOrE">
+          <input class="textinput_input__ICHQz"
+                 placeholder="Search"
+                 value
+          >
+        </div>
       </div>
-    </div>
-    <div class="actionIcon_root__jjWKK"
-         role="button"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="24"
-           height="24"
-           viewbox="0 0 24 24"
-           fill="none"
-           stroke="currentColor"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-           class="tabler-icon tabler-icon-search "
+      <div class="actionIcon_root__jjWKK"
+           role="button"
       >
-        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
-        </path>
-        <path d="M21 21l-6 -6">
-        </path>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="24"
+             height="24"
+             viewbox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             class="tabler-icon tabler-icon-search "
+        >
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
+          </path>
+          <path d="M21 21l-6 -6">
+          </path>
+        </svg>
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"

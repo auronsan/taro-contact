@@ -2,11 +2,13 @@
 
 exports[`components/Box AsADifferentComponent smoke-test 1`] = `
 <main class="roboto-normal">
-  <span id="first-child"
-        data-testid="first-child"
-  >
-    Content
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span id="first-child"
+          data-testid="first-child"
+    >
+      Content
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -18,8 +20,10 @@ exports[`components/Box AsADifferentComponent smoke-test 1`] = `
 
 exports[`components/Box WithChildren smoke-test 1`] = `
 <main class="roboto-normal">
-  <div>
-    Content
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div>
+      Content
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
@@ -32,11 +36,13 @@ exports[`components/Box WithChildren smoke-test 1`] = `
 
 exports[`components/Box WithCustomClassName smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="custom-class"
-       id="first-child"
-       data-testid="first-child"
-  >
-    Content
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="custom-class"
+         id="first-child"
+         data-testid="first-child"
+    >
+      Content
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
@@ -49,11 +55,13 @@ exports[`components/Box WithCustomClassName smoke-test 1`] = `
 
 exports[`components/Box WithInlineStyles smoke-test 1`] = `
 <main class="roboto-normal">
-  <div id="first-child"
-       data-testid="first-child"
-       style="background-color: red;"
-  >
-    Content
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div id="first-child"
+         data-testid="first-child"
+         style="background-color: red;"
+    >
+      Content
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
@@ -66,11 +74,13 @@ exports[`components/Box WithInlineStyles smoke-test 1`] = `
 
 exports[`components/Box WithMarginAndPadding smoke-test 1`] = `
 <main class="roboto-normal">
-  <div id="first-child"
-       data-testid="first-child"
-       style="margin: 10px; padding: 20px;"
-  >
-    Content
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div id="first-child"
+         data-testid="first-child"
+         style="margin: 10px; padding: 20px;"
+    >
+      Content
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"

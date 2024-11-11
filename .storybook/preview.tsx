@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Roboto } from 'next/font/google';
 import { addons } from '@storybook/preview-api';
+import { Container } from '@/components/Container';
 import { GlobalProvider } from '@/providers/GlobalProvider';
 
 import '@/app/global.css';
@@ -22,7 +23,19 @@ const channel = addons.getChannel();
 export const decorators = [
   (renderStory: any) => (
     <main className={roboto.className}>
-      <GlobalProvider>{renderStory()}</GlobalProvider>
+      <GlobalProvider>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+            flexDirection: 'column',
+          }}
+        >
+          {renderStory()}
+        </div>
+      </GlobalProvider>
     </main>
   ),
 ];

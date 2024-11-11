@@ -2,12 +2,14 @@
 
 exports[`components/Group Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_gap-sm__VCWmB">
-    <div>
-      Child 1
-    </div>
-    <div>
-      Child 2
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_gap-sm__VCWmB">
+      <div>
+        Child 1
+      </div>
+      <div>
+        Child 2
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
@@ -21,14 +23,16 @@ exports[`components/Group Default smoke-test 1`] = `
 
 exports[`components/Group WithProps smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="group_root__JMRrN group_justify-center__JoiHJ group_group-wrap__6mKEO group_gap-md__ZabtE group_fullWidth__KxvAQ"
-       style="padding: 16px; margin-bottom: 8px;"
-  >
-    <div>
-      Child 1
-    </div>
-    <div>
-      Child 2
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="group_root__JMRrN group_justify-center__JoiHJ group_group-wrap__6mKEO group_gap-md__ZabtE group_fullWidth__KxvAQ"
+         style="padding: 16px; margin-bottom: 8px;"
+    >
+      <div>
+        Child 1
+      </div>
+      <div>
+        Child 2
+      </div>
     </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"

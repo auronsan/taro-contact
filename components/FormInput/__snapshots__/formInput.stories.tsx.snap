@@ -2,13 +2,15 @@
 
 exports[`components/FormInput withForm smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="textinput_root__IJOrE">
-    <input class="textinput_input__ICHQz"
-           data-testid="form-input"
-           id="form-input"
-           value
-           name="test"
-    >
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="textinput_root__IJOrE">
+      <input class="textinput_input__ICHQz"
+             data-testid="form-input"
+             id="form-input"
+             value
+             name="test"
+      >
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
@@ -21,18 +23,20 @@ exports[`components/FormInput withForm smoke-test 1`] = `
 
 exports[`components/FormInput withLabel smoke-test 1`] = `
 <main class="roboto-normal">
-  <div class="textinput_root__IJOrE">
-    <label class="textinput_label__Fgwby"
-           for="form-input"
-    >
-      Test Label
-    </label>
-    <input class="textinput_input__ICHQz"
-           data-testid="form-input"
-           id="form-input"
-           value
-           name="test"
-    >
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <div class="textinput_root__IJOrE">
+      <label class="textinput_label__Fgwby"
+             for="form-input"
+      >
+        Test Label
+      </label>
+      <input class="textinput_input__ICHQz"
+             data-testid="form-input"
+             id="form-input"
+             value
+             name="test"
+      >
+    </div>
   </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"

@@ -2,9 +2,11 @@
 
 exports[`components/Text Default smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_fs-md__gO30j">
-    Default Text
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_fs-md__gO30j">
+      Default Text
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -16,11 +18,13 @@ exports[`components/Text Default smoke-test 1`] = `
 
 exports[`components/Text WithColor smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_fs-md__gO30j"
-        style="color: rgb(255, 0, 0);"
-  >
-    Red Color Text
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_fs-md__gO30j"
+          style="color: rgb(255, 0, 0);"
+    >
+      Red Color Text
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -32,9 +36,11 @@ exports[`components/Text WithColor smoke-test 1`] = `
 
 exports[`components/Text WithFontSize smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_fs-lg__IAQ1L">
-    Large Font Size Text
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_fs-lg__IAQ1L">
+      Large Font Size Text
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -46,9 +52,11 @@ exports[`components/Text WithFontSize smoke-test 1`] = `
 
 exports[`components/Text WithFontWeight smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_fs-md__gO30j text_fw-bold__DfOLl">
-    Bold Font Weight Text
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_fs-md__gO30j text_fw-bold__DfOLl">
+      Bold Font Weight Text
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -60,11 +68,13 @@ exports[`components/Text WithFontWeight smoke-test 1`] = `
 
 exports[`components/Text WithGradient smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_text-gradient__MXfWo text_fs-md__gO30j"
-        style="background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);"
-  >
-    Text with Gradient
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_text-gradient__MXfWo text_fs-md__gO30j"
+          style="background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);"
+    >
+      Text with Gradient
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
@@ -76,9 +86,11 @@ exports[`components/Text WithGradient smoke-test 1`] = `
 
 exports[`components/Text WithTextAlign smoke-test 1`] = `
 <main class="roboto-normal">
-  <span class="text_text__ynNTn text_ta-center__Rbgq3 text_fs-md__gO30j">
-    Center Aligned Text
-  </span>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <span class="text_text__ynNTn text_ta-center__Rbgq3 text_fs-md__gO30j">
+      Center Aligned Text
+    </span>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"

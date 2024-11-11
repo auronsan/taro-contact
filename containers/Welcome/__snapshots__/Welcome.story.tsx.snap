@@ -2,21 +2,23 @@
 
 exports[`containers/Welcome Usage smoke-test 1`] = `
 <main class="roboto-normal">
-  <h2 class="title_title__RhqmI Welcome_title__IQrvc">
-    Welcome to
-    <span class="text_text__ynNTn text_text-gradient__MXfWo text_fs-inherit__f2K_J"
-          style="background-image: linear-gradient(0deg, rgb(147, 192, 75) 0%, rgb(8, 198, 84) 100%);"
-    >
-      Taro Contact
-    </span>
-  </h2>
-  <p class="text_text__ynNTn text_ta-center__Rbgq3 text_fs-lg__IAQ1L">
-    <a href="/contacts"
-       class="anchor_root__e1GyS anchor_fs-lg__D_wUE"
-    >
-      Go to Contacts
-    </a>
-  </p>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <h2 class="title_title__RhqmI Welcome_title__IQrvc">
+      Welcome to
+      <span class="text_text__ynNTn text_text-gradient__MXfWo text_fs-inherit__f2K_J"
+            style="background-image: linear-gradient(0deg, rgb(147, 192, 75) 0%, rgb(8, 198, 84) 100%);"
+      >
+        Taro Contact
+      </span>
+    </h2>
+    <p class="text_text__ynNTn text_ta-center__Rbgq3 text_fs-lg__IAQ1L">
+      <a href="/contacts"
+         class="anchor_root__e1GyS anchor_fs-lg__D_wUE"
+      >
+        Go to Contacts
+      </a>
+    </p>
+  </div>
   <div class="stack_root__KVCbK toast_toast-container__8fZtQ stack_gap-xs__xTnny"
        id="toast-container"
        data-testid="toast-container"
