@@ -3,27 +3,66 @@ import clsx from 'clsx';
 import { getGradient } from '@/helpers/get-gradient';
 import classes from './text.module.css';
 
+/**
+ * Props for the Text component.
+ */
 export type TextProps = {
+  /**
+   * The content of the Text component.
+   */
   children: React.ReactNode;
+
+  /**
+   * The component to render the Text component as.
+   */
   component?: keyof JSX.IntrinsicElements;
+
+  /**
+   * The class name for the Text component.
+   */
   className?: string;
+
+  /**
+   * The gradient for the Text component.
+   */
   gradient?: { from: string; to: string; deg?: number };
+
+  /**
+   * The style for the Text component.
+   */
   style?: React.CSSProperties;
-  // text-align
+
+  /**
+   * The text alignment for the Text component.
+   */
   ta?: 'center' | 'right' | 'left' | 'justify';
-  // font-size
+
+  /**
+   * The font size for the Text component.
+   */
   size?: 'inherit' | 'xs' | 'sm' | 'md' | 'lg';
 
-  // onClick
+  /**
+   * The font weight for the Text component.
+   */
+  fw?: 'normal' | 'bold';
+
+  /**
+   * The click event handler for the Text component.
+   */
   onClick?: () => void;
 
-  // color
+  /**
+   * The color for the Text component.
+   */
   c?: string;
-
-  // font-weight
-  fw?: 'normal' | 'bold';
 };
 
+/**
+ * Text component.
+ * @param props - The props for the component.
+ * @returns The rendered Text component.
+ */
 export const Text = ({
   children,
   className,

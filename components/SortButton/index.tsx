@@ -6,9 +6,20 @@ import { Box } from '@/components/Box';
 import { Group } from '@/components/Group';
 import classes from './sortButton.module.css';
 
+/**
+ * Sort option.
+ */
 type TSortOption = 'id' | 'first_name' | 'last_name';
+
+/**
+ * Sort direction.
+ */
 type TSortDirection = 'asc' | 'desc';
 
+/**
+ * SortButton component.
+ * @returns The rendered sort button.
+ */
 export const SortButton = (): React.ReactElement => {
   const searchParams = useSearchParams();
   const pathName = usePathname();
@@ -19,6 +30,10 @@ export const SortButton = (): React.ReactElement => {
 
   const selectRef = useRef<HTMLSelectElement>();
 
+  /**
+   * Handles the sort option change.
+   * @param e - The change event.
+   */
   const handleSort = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newSort = e.target.value;
     const newSortSplit = newSort.split('.');

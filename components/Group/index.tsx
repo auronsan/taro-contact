@@ -3,19 +3,34 @@ import { Box } from '@/components/Box';
 import type { BoxProps } from '@/components/Box';
 import classes from './group.module.css';
 
+/**
+ * Props for the Group component.
+ */
 type GroupProps = {
+  /** The justification of the group's children. */
   justify?: 'center' | 'space-between' | 'end';
+
+  /** The wrapping behavior of the group's children. */
   wrap?: 'wrap' | 'nowrap';
+
+  /** The gap between the group's children. */
   gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  // padding
+
+  /** The padding of the group. */
   p?: number;
-  // margin-bottom
+
+  /** The margin-bottom of the group. */
   mb?: number;
 
-  // width 100%
+  /** Whether the group should take up 100% of its parent's width. */
   fullWidth?: boolean;
 } & BoxProps;
 
+/**
+ * Group component.
+ * @param props - The props for the component.
+ * @returns The rendered group.
+ */
 export const Group = ({
   children,
   className,

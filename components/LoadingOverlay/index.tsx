@@ -4,16 +4,26 @@ import { Overlay } from '@/components/Overlay';
 import { Transition } from '@/components/Transition';
 import classes from './loadingoverlay.module.css';
 
-export type LoadingOverlayProps = {
+/**
+ * Props for the LoadingOverlay component.
+ */
+type LoadingOverlayProps = {
+  /** Whether the loading overlay is visible. */
   visible: boolean;
 };
 
+/**
+ * LoadingOverlay component.
+ * @param props - The props for the component.
+ * @returns The rendered loading overlay.
+ */
 export const LoadingOverlay = (props: LoadingOverlayProps) => {
   const { visible } = props;
 
   if (!visible) {
     return <></>;
   }
+
   return (
     <Transition transition="fade" visible={visible}>
       {(transitionclasses) => (

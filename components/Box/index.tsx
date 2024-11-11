@@ -1,40 +1,51 @@
 import { MouseEventHandler } from 'react';
 
+/**
+ * Props for the Box component.
+ */
 export type BoxProps = {
   /** Class added to the root element, if applicable */
   className?: string;
   /** Inline style added to root component element*/
   style?: React.CSSProperties;
+  /** The component to render as the root element. Defaults to 'div'. */
   component?: keyof JSX.IntrinsicElements;
+  /** The content to be rendered inside the component. */
   children?: React.ReactNode;
 
-  // flexbox
+  /** The flex value for the component. */
   flex?: number;
 
-  // margin
+  /** The margin value for the component. */
   m?: number;
 
-  // margin-top
-  mt?: number;
-
-  // padding
+  /** The padding value for the component. */
   p?: number;
 
-  // padding-x
+  /** The padding-x value for the component. */
   px?: number;
 
-  // padding-y
+  /** The padding-y value for the component. */
   py?: number;
 
-  // onclick
-  onClick?: MouseEventHandler;
+  /** The margin-top value for the component. */
+  mt?: number;
 
-  // role
+  /** The role attribute for the component. */
   role?: string;
 
+  /** The ID attribute for the component. */
   id?: string;
+
+  /** Function to be called when the component is clicked. */
+  onClick?: MouseEventHandler;
 };
 
+/**
+ * Box component.
+ * @param props - The props for the component.
+ * @returns The rendered component.
+ */
 export const Box = ({
   children,
   className = '',
@@ -48,6 +59,7 @@ export const Box = ({
   mt,
   role,
   id,
+  onClick,
   ...rest
 }: BoxProps) => {
   const Component = component;
@@ -67,6 +79,7 @@ export const Box = ({
         ...(typeof py === 'number' ? { paddingTop: `${py}px`, paddingBottom: `${py}px` } : {}),
         ...(typeof mt === 'number' ? { marginTop: `${mt}px` } : {}),
       }}
+      onClick={onClick}
       {...rest}
     >
       {children}

@@ -8,10 +8,19 @@ import { Overlay } from '@/components/Overlay';
 import { Text } from '@/components/Text';
 import classes from './hambugerMenu.module.css';
 
+/**
+ * Props for the HamburgerMenu component.
+ */
 type HamburgerMenuProps = {
+  /** The menu content to be rendered inside the hamburger menu. */
   menu: React.ReactNode;
 };
 
+/**
+ * HamburgerMenu component.
+ * @param props - The props for the component.
+ * @returns The rendered hamburger menu.
+ */
 export const HamburgerMenu = (props: HamburgerMenuProps): React.ReactElement => {
   const { menu } = props;
   const [isOpen, setIsOpen] = useState(false);

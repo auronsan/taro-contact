@@ -8,6 +8,10 @@ import { Box } from '@/components/Box';
 import { Group } from '@/components/Group';
 import { TextInput } from '@/components/TextInput';
 
+/**
+ * Search component.
+ * @returns The rendered search bar.
+ */
 const Search = (): React.ReactElement => {
   const searchParams = useSearchParams();
   const queryParam = searchParams?.get('q');
@@ -18,6 +22,10 @@ const Search = (): React.ReactElement => {
 
   const searchRef = useRef<HTMLInputElement>();
 
+  /**
+   * Handles the search query.
+   * @param search - The search query.
+   */
   const handleSearch = (search: string) => {
     const query = new URLSearchParams(searchParams);
     query.set('q', search);
@@ -70,6 +78,10 @@ const Search = (): React.ReactElement => {
   );
 };
 
+/**
+ * SearchBar component.
+ * @returns The rendered search bar wrapped in a Suspense component.
+ */
 export const SearchBar = () => (
   <Suspense>
     <Search />
